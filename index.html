@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nathanieal Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+        type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <nav id="main-nav" class="portfolio-nav visible">
+        <div class="nav-container">
+            <a href="#parallax-container" class="nav-brand">NATHANIEAL &nbsp;<em>/</em>&nbsp; Portfolio</a>
+            <ul class="nav-menu">
+                <li><a href="#parallax-container">Home</a></li>
+
+                <li class="has-dropdown">
+                    <a href="#backstory-section">Background <span class="nav-arrow">&#9660;</span></a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="college-results.html">College Results</a></li>
+                        <li><a href="school-results.html">School Results</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-dropdown">
+                    <a href="certificates.html">Certificates <span class="nav-arrow">&#9660;</span></a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="certificates.html#cert1">Game Dev</a></li>
+                        <li><a href="certificates.html#cert4">Game Jam</a></li>
+                        <li><a href="certificates.html#cert5">Foundation Course</a></li>
+                        <li><a href="certificates.html#cert2">SAP Analytics</a></li>
+                        <li><a href="certificates.html#cert6">Fashion Show</a></li>
+                        <li><a href="certificates.html#cert7">BIS Poster</a></li>
+                        <li><a href="certificates.html#cert8">Chess</a></li>
+                        <li><a href="certificates.html#cert3">Badminton</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-dropdown">
+                    <a href="achievements.html">Achievements <span class="nav-arrow">&#9660;</span></a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="achievements.html#ach-gamejam">Game Jam 2nd</a></li>
+                        <li><a href="achievements.html#ach-volleyball">Volleyball Win</a></li>
+                        <li><a href="achievements.html#ach-chess">Chess Runner-Up</a></li>
+                        <li><a href="achievements.html#ach-quiz">Quiz Runner-Up</a></li>
+                        <li><a href="achievements.html#ach-bis">BIS Poster 3rd</a></li>
+                    </ul>
+                </li>
+
+                <li class="has-dropdown">
+                    <a href="projects.html">Projects <span class="nav-arrow">&#9660;</span></a>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="projects.html#proj-secretbook">The Secret Book</a></li>
+                        <li><a href="projects.html#proj-sharpshooter">Sharp Shooter</a></li>
+                        <li><a href="projects.html#proj-royalrun">Royal Run</a></li>
+                        <li><a href="projects.html#proj-galaxystrike">Galaxy Strike</a></li>
+                        <li><a href="projects.html#proj-rocketboost">Rocket Boost</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="feedback.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="parallax" id="parallax-container">
+        <div class="parallax__layer parallax__layer__0">
+            <img src="./images/layer_0.png" alt="Parallax Layer 0" />
+        </div>
+        <div class="parallax__layer parallax__layer__1">
+            <img src="./images/layer_1.png" alt="Parallax Layer 1" />
+            <svg class="drifting-birds" viewBox="0 0 400 100" width="400" height="100"
+                xmlns="http://www.w3.org/2000/svg">
+                <g fill="rgba(0,0,0,0.5)">
+                    <path d="M10,50 Q15,45 20,50 Q15,48 10,50" />
+                    <path d="M20,50 Q25,40 30,50 Q25,45 20,50" />
+                    <path d="M50,70 Q55,60 60,70 Q55,65 50,70" />
+                    <path d="M60,70 Q65,58 70,70 Q65,63 60,70" />
+                    <path d="M40,65 Q45,55 50,65 Q45,60 40,65" />
+                </g>
+            </svg>
+        </div>
+        <div class="parallax__layer parallax__layer__2">
+            <img src="./images/layer_2.png" alt="Parallax Layer 2" />
+        </div>
+        <div class="parallax__layer parallax__layer__3">
+            <img src="./images/layer_3.png" alt="Parallax Layer 3" />
+        </div>
+        <div class="parallax__layer parallax__layer__4">
+            <img src="./images/layer_4.png" alt="Parallax Layer 4" />
+        </div>
+        <div class="parallax__layer parallax__layer__5">
+            <img src="./images/layer_5.png" alt="Parallax Layer 5" />
+        </div>
+        <div class="parallax__layer parallax__layer__6">
+            <img src="./images/layer_6.png" alt="Parallax Layer 6" />
+        </div>
+
+        <div class="parallax__layer hero-text-layer">
+            <div class="hero-content">
+                <h1 class="hero-name">NATHANIEAL</h1>
+                <h2 class="hero-title">Game Developer & Creator</h2>
+                <!--<div class="scroll-arrow-container">
+                    <svg class="scroll-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                        <path d="M7 10l5 5 5-5" stroke="var(--coral-accent)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>-->
+            </div>
+        </div>
+
+    <div class="parallax__cover">
+        <div id="particles-container"></div>
+        <div class="about-section glow-on-hover" style="border:1px solid transparent;"> 
+            <div class="glow-orb orb-1"></div>
+            <div class="glow-orb orb-2"></div>
+            <div class="about-grid">
+                    <!-- Left Column: Photo -->
+                    <div class="about-photo-col">
+                        <div class="profile-frame">
+                            <img src="./profile.jpg" alt="Profile Picture">
+                        </div>
+                    </div>
+
+                <!-- Middle Column: Bio -->
+                <div class="about-bio-col">
+                    <div class="text-reveal-wrapper"><h2 class="about-greeting text-reveal animate-on-scroll is-visible">HELLO,<br>I'm <span class="highlight-name">Nathanieal</span>!</h2></div>
+                    <div class="status-badge animate-on-scroll slide-up">
+                        <div class="pulsing-dot"></div>
+                        <span>Currently Building: Unity RPG</span>
+                    </div>
+                    <p class="animate-on-scroll slide-up delay-100">I have been working as a Game Developer forged in the crucible of code and creativity. I
+                        primarily wield Unity and C# as my weapons of choice. Currently pursuing B.E. in Computer
+                        Engineering at Gujarat Technological University, I breathe life into interactive worlds —
+                        from 3D story-driven adventures to action-packed web games.</p>
+                    <p class="animate-on-scroll slide-up delay-200">My quest began with a passion for play and evolved into a relentless pursuit of crafting
+                        experiences that captivate and challenge. I've battled through game jams, built physics
+                        systems from scratch, and sculpted gameplay mechanics that feel like second nature. The
+                        forge is always hot. I am always building.</p>
+                    </div>
+
+                <!-- Right Column: Sidebar -->
+                <div class="about-sidebar-col">
+                    <div class="sidebar-section animate-on-scroll slide-left delay-300">
+                        <h3>SOFTWARES</h3>
+                            <div class="software-icons">
+                                <div class="software-logo-item">
+                                    <img src="./images/unity.svg" alt="Unity" class="software-logo" />
+                                    <span>Unity</span>
+                                </div>
+                                <div class="software-logo-item">
+                                    <img src="./images/vscode.svg" alt="VS Code" class="software-logo" />
+                                    <span>VS Code</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="sidebar-section stats-section animate-on-scroll slide-left delay-400">
+                        <div class="stat-grid">
+                                <div class="stat-item"><span class="stat-number" data-target="1">0</span><span
+                                        class="stat-label">Game Jam</span></div>
+                                <div class="stat-item"><span class="stat-number" data-target="1">0</span><span
+                                        class="stat-label">Shipped Game</span></div>
+                                <div class="stat-item"><span class="stat-number" data-target="2">0</span><span
+                                        class="stat-label">Years Unity</span></div>
+                                <div class="stat-item"><span class="stat-number" data-target="1">0</span><span
+                                        class="stat-label">Award</span></div>
+                            </div>
+                        </div>
+
+                    <div class="sidebar-section animate-on-scroll slide-left delay-500">
+                        <h3>SKILLS</h3>
+                            <ul>
+                                <li>C# & C++</li>
+                                <li>Python & Java</li>
+                                <li>Gameplay Mechanics</li>
+                                <li>Web Development</li>
+                            </ul>
+                        </div>
+
+                    <div class="sidebar-section animate-on-scroll slide-left delay-500">
+                        <h3>EXPERIENCE</h3>
+                            <ul>
+                                <li><strong>GTU B.E. CE</strong><br>Computer Engineering</li>
+                                <li><strong>Game Developer</strong><br>Independent Creator</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- BACKSTORY TIMELINE SECTION -->
+        <div class="backstory-section" id="backstory-section">
+            <img src="./images/new_education_bg.png" class="education-bg" alt="" aria-hidden="true" />
+            <h2 class="backstory-title animate-on-scroll slide-up">MY BACKSTORY</h2>
+            <div class="backstory-divider animate-on-scroll scale-up delay-100"></div>
+
+                <div class="timeline">
+
+                <!-- Entry 1: Bachelor's Degree (right) -->
+                <div class="timeline-item right animate-on-scroll slide-up delay-100">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Gujarat Technological University</h3>
+                            <span class="timeline-sub">July 2023 &mdash; Present</span>
+                            <p>Currently pursuing Bachelor of Engineering in Computer Engineering. With a CPI of 7.91
+                                and a CGPI of 8.87, the academic journey runs parallel to a relentless passion for game
+                                development — building Unity projects, competing in game jams, and shipping real games.
+                            </p>
+                            <a href="college-results.html" class="view-more-btn">VIEW RESULTS</a>
+                        </div>
+                    </div>
+
+                <!-- Entry 2: High School (left) -->
+                <div class="timeline-item left animate-on-scroll slide-up delay-200">
+                        <div class="timeline-content">
+                            <h3>Metas Adventist International School</h3>
+                            <span class="timeline-sub">June 2019 &mdash; May 2023</span>
+                            <p>Completed higher secondary education with a focus on Physics, Chemistry and Mathematics
+                                (PCM). Scored 69% in 12<sup>th</sup> and 70% in 10<sup>th</sup> boards. It was here that
+                                a deep interest in computers and logic took root, sparking the dream to build worlds,
+                                not just study them.</p>
+                            <a href="school-results.html" class="view-more-btn">VIEW RESULTS</a>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+
+                <!-- Entry 3: Primary School (right) -->
+                <div class="timeline-item right animate-on-scroll slide-up delay-300">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Singhania Public School</h3>
+                            <span class="timeline-sub">Early Education &nbsp;&mdash;&nbsp; Up to Grade 8</span>
+                            <p>Where curiosity was first ignited. A foundation of mathematics, science and language
+                                shaped the analytical mind that would one day design game systems. Every subject was a
+                                puzzle waiting to be solved.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        <!-- SHOWCASE SECTION (Certificates, Achievements, Projects) -->
+        <div class="showcase-section" id="showcase-section">
+            <h2 class="showcase-title animate-on-scroll slide-up">MILESTONES & WORK</h2>
+            <div class="showcase-divider animate-on-scroll scale-up delay-100"></div>
+
+                <div class="showcase-flex">
+                <!-- Entry 1: Certificates -->
+                <a href="certificates.html" style="text-decoration: none; display: block;" class="animate-on-scroll fade-in delay-100">
+                    <div class="showcase-card float-hover">
+                            <div class="showcase-img-wrapper">
+                                <img src="./images/certificate.jpg" alt="Certificates">
+                            </div>
+                            <div class="showcase-header-wrapper">
+                                <h1 class="main-title">Certificates</h1>
+                                <h1 class="hover-title">View<br>More</h1>
+                            </div>
+                        </div>
+                    </a>
+
+                <!-- Entry 2: Achievements -->
+                <a href="achievements.html" style="text-decoration: none; display: block;" class="animate-on-scroll fade-in delay-200">
+                    <div class="showcase-card float-hover">
+                            <div class="showcase-img-wrapper">
+                                <img src="./images/trophy.png" alt="Achievements">
+                            </div>
+                            <div class="showcase-header-wrapper">
+                                <h1 class="main-title">Achievements</h1>
+                                <h1 class="hover-title">View<br>More</h1>
+                            </div>
+                        </div>
+                    </a>
+
+                <!-- Entry 3: Projects -->
+                <a href="projects.html" style="text-decoration: none; display: block;" class="animate-on-scroll fade-in delay-300">
+                    <div class="showcase-card float-hover">
+                            <div class="showcase-img-wrapper">
+                                <img src="./images/project.png" alt="Projects">
+                            </div>
+                            <div class="showcase-header-wrapper">
+                                <h1 class="main-title">Projects</h1>
+                                <h1 class="hover-title">See<br>Projects</h1>
+                            </div>
+                        </div>
+                    </a>
+                <!-- EXTRA CURRICULAR SECTION -->
+                <a href="extra-curricular.html" style="text-decoration: none; display: block;" class="animate-on-scroll fade-in delay-400">
+                    <div class="showcase-card float-hover">
+                            <div class="showcase-img-wrapper">
+                                <img src="./images/ExtraCurricular.jpg" alt="Extra Curricular">
+                            </div>
+                            <div class="showcase-header-wrapper">
+                                <h1 class="main-title">Extra Curricular</h1>
+                                <h1 class="hover-title">See<br>Extra Curricular</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- MODERN FOOTER -->
+            <footer class="modern-footer" id="contact-section">
+                <div class="modern-footer-top">
+                    <!-- Column 1: About Me -->
+                    <div class="footer-col about-col">
+                        <h4>ABOUT ME</h4>
+                        <p>Game Developer crafted in the crucible of code and creativity, specialized in Unity Engine
+                            and C#.</p>
+                        <p>Currently pursuing B.E. in Computer Engineering, building interactive worlds — from 3D
+                            story-driven adventures to action-packed web games.</p>
+                        <p>I am looking for an opportunity where I can combine my skills as a programmer and my
+                            knowledge as a designer in a passionate team project.</p>
+                    </div>
+
+                    <!-- Column 2: Latest Projects -->
+                    <div class="footer-col">
+                        <h4>LATEST PROJECTS</h4>
+                        <ul>
+                            <li><a href="projects.html#proj-secretbook">THE SECRET BOOK</a></li>
+                            <li><a href="projects.html#proj-sharpshooter">SHARP SHOOTER</a></li>
+                            <li><a href="projects.html#proj-royalrun">ROYAL RUN</a></li>
+                            <li><a href="projects.html#proj-galaxystrike">GALAXY STRIKE</a></li>
+                            <li><a href="projects.html#proj-rocketboost">ROCKET BOOST</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Portfolio -->
+                    <div class="footer-col">
+                        <h4>PORTFOLIO</h4>
+                        <ul>
+                            <li><a href="#parallax-container">HOME</a></li>
+                            <li><a href="certificates.html">CERTIFICATES</a></li>
+                            <li><a href="projects.html">PROJECTS</a></li>
+                            <li><a href="https://github.com/Nathanieal06">GITHUB</a></li>
+                            <li><a href="Resume/Nathanieal_Sandipurti_Resume.pdf">RESUME</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <!-- Column 5: Brand / Navigation -->
+                    <div class="footer-col">
+                        <h4>NATHANIEAL</h4>
+                        <ul>
+                            <li><a href="#parallax-container">HOME</a></li>
+                            <li><a href="projects.html">PORTFOLIO</a></li>
+                            <li><a href="achievements.html">ACHIEVEMENTS</a></li>
+                            <li><a href="certificates.html">CERTIFICATES</a></li>
+                            <li><a href="feedback.html">FEEDBACK</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="modern-footer-divider"></div>
+
+                <div class="modern-footer-bottom">
+                    <ul class="footer-bottom-links">
+                        <li><a href="#parallax-container">HOME</a></li>
+                        <li><a href="projects.html">PORTFOLIO</a></li>
+                        <li><a href="achievements.html">ACHIEVEMENTS</a></li>
+                        <li><a href="certificates.html">CERTIFICATES</a></li>
+                        <li><a href="feedback.html">BIOGRAPHY & CONTACT</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div> <!-- Closes .parallax container properly -->
+
+
+
+    <div id="custom-crosshair"></div>
+
+    <!-- Floating Socials -->
+    <div class="floating-socials" id="floating-socials">
+        <a href="https://github.com/Nathanieal06" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24">
+                <path
+                    d="M12 .5C5.37 .5 0 5.78 0 12.292c0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.692.825.56C20.565 21.917 24 17.495 24 12.292 24 5.78 18.627.5 12 .5z" />
+            </svg></a>
+        <a href="https://www.linkedin.com/in/nathanieal-sandipurti" target="_blank" aria-label="LinkedIn"><svg
+                viewBox="0 0 24 24">
+                <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg></a>
+        <a href="mailto:nathasandipurti@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24">
+                <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+            </svg></a>
+        <a href="feedback.html" aria-label="Contact / Feedback"><svg viewBox="0 0 24 24">
+                <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg></a>
+    </div>
+
+    <script src="script.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</body>
+
+</html>
