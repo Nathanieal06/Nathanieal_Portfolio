@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements — Nathanieal | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/components.js"></script>
+</head>
+
+<body class="ach-body" data-page="achievements" data-root="../">
+
+    <div id="site-nav"></div>
+
+    <!-- Full Custom Parallax — SVG Layers recreating the Deer Sunset scene -->
+    <div class="parallax ach-parallax" id="parallax-container">
+
+        <!-- Layer 0: Sky gradient + stars (farthest back) -->
+        <div class="parallax__layer parallax__layer__0">
+            <svg class="ach-layer-svg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"
+                preserveAspectRatio="xMidYMax slice">
+                <defs>
+                    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#080614" />
+                        <stop offset="20%" stop-color="#0d0920" />
+                        <stop offset="45%" stop-color="#1a1035" />
+                        <stop offset="65%" stop-color="#2d1040" />
+                        <stop offset="80%" stop-color="#8b2a1a" />
+                        <stop offset="100%" stop-color="#c0441a" />
+                    </linearGradient>
+                </defs>
+                <rect width="1920" height="1080" fill="url(#skyGrad)" />
+
+                <!-- *** STARS — r values in SVG units. SVG 1920w maps to ~1046px screen ***
+                     Scale factor ~0.545, so r=5 → 2.7px, r=8 → 4.4px, r=12 → 6.5px visible -->
+                <g class="ach-stars-group">
+                    <!-- Row 1: top band y=20-120 -->
+                    <circle class="s" cx="80" cy="40" r="5" opacity="0.85" />
+                    <circle class="s" cx="200" cy="65" r="4" opacity="0.7" />
+                    <circle class="s" cx="310" cy="28" r="6" opacity="0.9" />
+                    <circle class="s" cx="420" cy="88" r="4" opacity="0.75" />
+                    <circle class="s" cx="550" cy="35" r="5" opacity="0.8" />
+                    <circle class="s" cx="640" cy="110" r="4" opacity="0.65" />
+                    <circle class="s" cx="720" cy="52" r="7" opacity="0.9" />
+                    <circle class="s" cx="830" cy="30" r="4" opacity="0.7" />
+                    <circle class="s" cx="910" cy="95" r="5" opacity="0.8" />
+                    <circle class="s" cx="1010" cy="45" r="6" opacity="0.85" />
+                    <circle class="s" cx="1100" cy="80" r="4" opacity="0.7" />
+                    <circle class="s" cx="1180" cy="25" r="5" opacity="0.9" />
+                    <circle class="s" cx="1280" cy="105" r="4" opacity="0.65" />
+                    <circle class="s" cx="1370" cy="55" r="6" opacity="0.8" />
+                    <circle class="s" cx="1460" cy="30" r="4" opacity="0.75" />
+                    <circle class="s" cx="1540" cy="90" r="5" opacity="0.85" />
+                    <circle class="s" cx="1640" cy="45" r="4" opacity="0.7" />
+                    <circle class="s" cx="1730" cy="75" r="6" opacity="0.8" />
+                    <circle class="s" cx="1820" cy="35" r="4" opacity="0.9" />
+                    <circle class="s" cx="1900" cy="100" r="5" opacity="0.75" />
+                    <!-- Row 2: y=130-260 -->
+                    <circle class="s" cx="55" cy="170" r="4" opacity="0.6" />
+                    <circle class="s" cx="170" cy="195" r="5" opacity="0.7" />
+                    <circle class="s" cx="260" cy="145" r="4" opacity="0.55" />
+                    <circle class="s" cx="390" cy="210" r="6" opacity="0.65" />
+                    <circle class="s" cx="490" cy="160" r="4" opacity="0.6" />
+                    <circle class="s" cx="600" cy="230" r="5" opacity="0.7" />
+                    <circle class="s" cx="690" cy="150" r="4" opacity="0.55" />
+                    <circle class="s" cx="800" cy="215" r="6" opacity="0.65" />
+                    <circle class="s" cx="890" cy="175" r="4" opacity="0.6" />
+                    <circle class="s" cx="980" cy="240" r="5" opacity="0.7" />
+                    <circle class="s" cx="1070" cy="160" r="4" opacity="0.6" />
+                    <circle class="s" cx="1160" cy="220" r="6" opacity="0.65" />
+                    <circle class="s" cx="1250" cy="145" r="4" opacity="0.55" />
+                    <circle class="s" cx="1340" cy="200" r="5" opacity="0.7" />
+                    <circle class="s" cx="1440" cy="175" r="4" opacity="0.6" />
+                    <circle class="s" cx="1530" cy="235" r="6" opacity="0.65" />
+                    <circle class="s" cx="1620" cy="155" r="4" opacity="0.55" />
+                    <circle class="s" cx="1710" cy="205" r="5" opacity="0.7" />
+                    <circle class="s" cx="1810" cy="165" r="4" opacity="0.6" />
+                    <circle class="s" cx="1890" cy="245" r="5" opacity="0.65" />
+                    <!-- Row 3: y=270-380 sparse -->
+                    <circle class="s" cx="140" cy="295" r="4" opacity="0.45" />
+                    <circle class="s" cx="340" cy="320" r="5" opacity="0.5" />
+                    <circle class="s" cx="520" cy="285" r="4" opacity="0.45" />
+                    <circle class="s" cx="710" cy="345" r="5" opacity="0.5" />
+                    <circle class="s" cx="870" cy="300" r="4" opacity="0.45" />
+                    <circle class="s" cx="1060" cy="360" r="5" opacity="0.5" />
+                    <circle class="s" cx="1230" cy="310" r="4" opacity="0.45" />
+                    <circle class="s" cx="1410" cy="350" r="5" opacity="0.5" />
+                    <circle class="s" cx="1590" cy="290" r="4" opacity="0.45" />
+                    <circle class="s" cx="1780" cy="340" r="5" opacity="0.5" />
+                    <!-- Bright large accent stars -->
+                    <circle class="s" cx="460" cy="130" r="9" opacity="1.0" />
+                    <circle class="s" cx="1240" cy="70" r="8" opacity="1.0" />
+                    <circle class="s" cx="1690" cy="140" r="10" opacity="1.0" />
+                    <circle class="s" cx="280" cy="255" r="8" opacity="0.9" />
+                    <circle class="s" cx="1050" cy="120" r="9" opacity="1.0" />
+                    <circle class="s" cx="755" cy="195" r="8" opacity="0.95" />
+                    <circle class="s" cx="1540" cy="185" r="9" opacity="0.95" />
+                </g>
+            </svg>
+        </div>
+        <div class="parallax__layer parallax__layer__1">
+            <img src="../assets/images/parallax/layer_1.png" alt="Parallax Layer 1" />
+            <svg class="drifting-birds" viewBox="0 0 400 100" width="400" height="100"
+                xmlns="http://www.w3.org/2000/svg">
+                <g fill="rgba(0,0,0,0.5)">
+                    <path d="M10,50 Q15,45 20,50 Q15,48 10,50" />
+                    <path d="M20,50 Q25,40 30,50 Q25,45 20,50" />
+                    <path d="M50,70 Q55,60 60,70 Q55,65 50,70" />
+                    <path d="M60,70 Q65,58 70,70 Q65,63 60,70" />
+                    <path d="M40,65 Q45,55 50,65 Q45,60 40,65" />
+                </g>
+            </svg>
+        </div>
+
+        <!-- Layer 2: Far mountains -->
+        <div class="parallax__layer parallax__layer__2">
+            <img src="../assets/images/parallax/layer_2.png" alt="Parallax Layer 2" />
+        </div>
+
+        <!-- Layer 3: Mid mountains (closer, darker) -->
+        <div class="parallax__layer parallax__layer__3">
+            <img src="../assets/images/parallax/layer_3.png" alt="Parallax Layer 3" />
+        </div>
+
+        <!-- Layer 4: Lake / reflection -->
+        <div class="parallax__layer parallax__layer__4">
+            <img src="../assets/images/parallax/layer_4.png" alt="Parallax Layer 4" />
+        </div>
+
+        <!-- Layer 6: Foreground tall pine trees (left + right flanks) -->
+        <div class="parallax__layer parallax__layer__6">
+            <img src="../assets/images/parallax/layer_6.png" alt="Parallax Layer 6" />
+        </div>
+
+
+        <!-- Hero text layer -->
+        <div class="parallax__layer hero-text-layer ach-hero-text-layer">
+            <div class="hero-content ach-hero-content">
+                <h1 class="hero-name ach-hero-name">ACHIEVEMENTS</h1>
+                <h2 class="hero-title ach-hero-subtitle">HONORS &amp; AWARDS</h2>
+            </div>
+        </div>
+
+        <!-- Scrollable content cover -->
+        <div class="parallax__cover">
+            <div class="achievements-section">
+                <!--<h1 class="ach-title">Achievements</h1>
+                <div class="ach-divider"></div>-->
+
+                <div class="ach-grid">
+                    <!-- Card 1: Game Jam -->
+                    <div class="ach-card animate-on-scroll slide-up" id="ach-gamejam">
+                        <div class="ach-card-inner float-hover">
+                            <div class="ach-card-front">
+                                <img src="../assets/images/certificates/NATHANIEAL SANDIPURTI-1.png" alt="Zimension Game Jam" loading="lazy">
+                            </div>
+                            <div class="ach-card-back">
+                                <h3>Game Jam 2nd Rank</h3>
+                                <p>Zimension Game Jam 2nd rank, powered by Zimension and IGDC.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Volleyball -->
+                    <div class="ach-card animate-on-scroll slide-up delay-100" id="ach-volleyball">
+                        <div class="ach-card-inner float-hover">
+                            <div class="ach-card-front">
+                                <img src="../assets/images/achievements/Volleyball winner.png" alt="Volleyball Winner" loading="lazy">
+                            </div>
+                            <div class="ach-card-back">
+                                <h3>Volleyball Winner</h3>
+                                <p>Volleyball winner in college sports Lakshya 2k25.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Chess -->
+                    <div class="ach-card animate-on-scroll slide-up delay-200" id="ach-chess">
+                        <div class="ach-card-inner float-hover">
+                            <div class="ach-card-front">
+                                <img src="../assets/images/certificates/certificate.jpg" alt="Chess Runner Up" loading="lazy">
+                            </div>
+                            <div class="ach-card-back">
+                                <h3>Chess Runner Up</h3>
+                                <p>Chess Runner up Lakshya 2k24.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Quiz -->
+                    <div class="ach-card animate-on-scroll slide-up delay-300" id="ach-quiz">
+                        <div class="ach-card-inner float-hover">
+                            <div class="ach-card-front">
+                                <img src="../assets/images/achievements/Quiz Competion.jpeg" alt="Quiz Competition Runner Up" loading="lazy">
+                            </div>
+                            <div class="ach-card-back">
+                                <h3>Quiz Runner Up</h3>
+                                <p>Runner up at Manthan 2k23 college-level quiz competition.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: BIS Poster -->
+                    <div class="ach-card animate-on-scroll slide-up delay-400" id="ach-bis">
+                        <div class="ach-card-inner float-hover">
+                            <div class="ach-card-front">
+                                <img src="../assets/images/certificates/BIS Certificate.jpeg" alt="BIS Poster Competition" loading="lazy">
+                            </div>
+                            <div class="ach-card-back">
+                                <h3>BIS Poster 3rd Rank</h3>
+                                <p>BIS Poster Competition 3rd Rank.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div id="site-footer"></div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            var parallax = document.getElementById('parallax-container');
+            var heroContent = document.querySelector('.ach-hero-content');
+            if (!parallax || !heroContent) return;
+
+            function onScroll() {
+                var scrollY = parallax.scrollTop;
+                var fadeEnd = 280;
+                var opacity = Math.max(0, 1 - scrollY / fadeEnd);
+                var drift = scrollY * 0.15;
+                heroContent.style.opacity = opacity;
+                heroContent.style.transform = 'translateY(-' + drift + 'px)';
+            }
+
+            parallax.addEventListener('scroll', onScroll, { passive: true });
+        })();
+    </script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

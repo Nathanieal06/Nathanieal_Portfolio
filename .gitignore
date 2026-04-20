@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.code-workspace
+
+# Python helpers (one-off scripts)
+*.py
+
+# Node (if ever added)
+node_modules/

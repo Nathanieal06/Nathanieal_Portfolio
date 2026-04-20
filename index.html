@@ -9,71 +9,19 @@
 
     <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/components.js"></script>
 
 </head>
 
-<body>
-    <nav id="main-nav" class="portfolio-nav visible">
-        <div class="nav-container">
-            <a href="#parallax-container" class="nav-brand">NATHANIEAL &nbsp;<em>/</em>&nbsp; Portfolio</a>
-            <ul class="nav-menu">
-                <li><a href="#parallax-container">Home</a></li>
-
-                <li class="has-dropdown">
-                    <a href="#backstory-section">Background <span class="nav-arrow">&#9660;</span></a>
-                    <ul class="nav-dropdown-menu">
-                        <li><a href="college-results.html">College Results</a></li>
-                        <li><a href="school-results.html">School Results</a></li>
-                    </ul>
-                </li>
-
-                <li class="has-dropdown">
-                    <a href="certificates.html">Certificates <span class="nav-arrow">&#9660;</span></a>
-                    <ul class="nav-dropdown-menu">
-                        <li><a href="certificates.html#cert1">Game Dev</a></li>
-                        <li><a href="certificates.html#cert4">Game Jam</a></li>
-                        <li><a href="certificates.html#cert5">Foundation Course</a></li>
-                        <li><a href="certificates.html#cert2">SAP Analytics</a></li>
-                        <li><a href="certificates.html#cert6">Fashion Show</a></li>
-                        <li><a href="certificates.html#cert7">BIS Poster</a></li>
-                        <li><a href="certificates.html#cert8">Chess</a></li>
-                        <li><a href="certificates.html#cert3">Badminton</a></li>
-                    </ul>
-                </li>
-
-                <li class="has-dropdown">
-                    <a href="achievements.html">Achievements <span class="nav-arrow">&#9660;</span></a>
-                    <ul class="nav-dropdown-menu">
-                        <li><a href="achievements.html#ach-gamejam">Game Jam 2nd</a></li>
-                        <li><a href="achievements.html#ach-volleyball">Volleyball Win</a></li>
-                        <li><a href="achievements.html#ach-chess">Chess Runner-Up</a></li>
-                        <li><a href="achievements.html#ach-quiz">Quiz Runner-Up</a></li>
-                        <li><a href="achievements.html#ach-bis">BIS Poster 3rd</a></li>
-                    </ul>
-                </li>
-
-                <li class="has-dropdown">
-                    <a href="projects.html">Projects <span class="nav-arrow">&#9660;</span></a>
-                    <ul class="nav-dropdown-menu">
-                        <li><a href="projects.html#proj-secretbook">The Secret Book</a></li>
-                        <li><a href="projects.html#proj-sharpshooter">Sharp Shooter</a></li>
-                        <li><a href="projects.html#proj-royalrun">Royal Run</a></li>
-                        <li><a href="projects.html#proj-galaxystrike">Galaxy Strike</a></li>
-                        <li><a href="projects.html#proj-rocketboost">Rocket Boost</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="feedback.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<body data-page="" data-root="">
+    <div id="site-nav"></div>
     <div class="parallax" id="parallax-container">
         <div class="parallax__layer parallax__layer__0">
-            <img src="./images/layer_0.png" alt="Parallax Layer 0" />
+            <img src="assets/images/parallax/layer_0.png" alt="Parallax Layer 0" />
         </div>
         <div class="parallax__layer parallax__layer__1">
-            <img src="./images/layer_1.png" alt="Parallax Layer 1" />
+            <img src="assets/images/parallax/layer_1.png" alt="Parallax Layer 1" />
             <svg class="drifting-birds" viewBox="0 0 400 100" width="400" height="100"
                 xmlns="http://www.w3.org/2000/svg">
                 <g fill="rgba(0,0,0,0.5)">
@@ -86,19 +34,19 @@
             </svg>
         </div>
         <div class="parallax__layer parallax__layer__2">
-            <img src="./images/layer_2.png" alt="Parallax Layer 2" />
+            <img src="assets/images/parallax/layer_2.png" alt="Parallax Layer 2" />
         </div>
         <div class="parallax__layer parallax__layer__3">
-            <img src="./images/layer_3.png" alt="Parallax Layer 3" />
+            <img src="assets/images/parallax/layer_3.png" alt="Parallax Layer 3" />
         </div>
         <div class="parallax__layer parallax__layer__4">
-            <img src="./images/layer_4.png" alt="Parallax Layer 4" />
+            <img src="assets/images/parallax/layer_4.png" alt="Parallax Layer 4" />
         </div>
         <div class="parallax__layer parallax__layer__5">
-            <img src="./images/layer_5.png" alt="Parallax Layer 5" />
+            <img src="assets/images/parallax/layer_5.png" alt="Parallax Layer 5" />
         </div>
         <div class="parallax__layer parallax__layer__6">
-            <img src="./images/layer_6.png" alt="Parallax Layer 6" />
+            <img src="assets/images/parallax/layer_6.png" alt="Parallax Layer 6" />
         </div>
 
         <div class="parallax__layer hero-text-layer">
@@ -115,14 +63,12 @@
 
     <div class="parallax__cover">
         <div id="particles-container"></div>
-        <div class="about-section glow-on-hover" style="border:1px solid transparent;"> 
-            <div class="glow-orb orb-1"></div>
-            <div class="glow-orb orb-2"></div>
+        <div class="about-section" style="border:1px solid transparent;"> 
             <div class="about-grid">
                     <!-- Left Column: Photo -->
                     <div class="about-photo-col">
                         <div class="profile-frame">
-                            <img src="./profile.jpg" alt="Profile Picture">
+                            <img src="assets/images/profile/profile.jpg" alt="Profile Picture">
                         </div>
                     </div>
 
@@ -149,11 +95,11 @@
                         <h3>SOFTWARES</h3>
                             <div class="software-icons">
                                 <div class="software-logo-item">
-                                    <img src="./images/unity.svg" alt="Unity" class="software-logo" />
+                                    <img src="assets/images/icons/unity.svg" alt="Unity" class="software-logo" />
                                     <span>Unity</span>
                                 </div>
                                 <div class="software-logo-item">
-                                    <img src="./images/vscode.svg" alt="VS Code" class="software-logo" />
+                                    <img src="assets/images/icons/vscode.svg" alt="VS Code" class="software-logo" />
                                     <span>VS Code</span>
                                 </div>
                             </div>
@@ -195,7 +141,7 @@
 
         <!-- BACKSTORY TIMELINE SECTION -->
         <div class="backstory-section" id="backstory-section">
-            <img src="./images/new_education_bg.png" class="education-bg" alt="" aria-hidden="true" />
+            <img src="assets/images/backgrounds/new_education_bg.png" class="education-bg" alt="" aria-hidden="true"  loading="lazy" />
             <h2 class="backstory-title animate-on-scroll slide-up">MY BACKSTORY</h2>
             <div class="backstory-divider animate-on-scroll scale-up delay-100"></div>
 
@@ -211,7 +157,7 @@
                                 and a CGPI of 8.87, the academic journey runs parallel to a relentless passion for game
                                 development — building Unity projects, competing in game jams, and shipping real games.
                             </p>
-                            <a href="college-results.html" class="view-more-btn">VIEW RESULTS</a>
+                            <a href="pages/college-results.html" class="view-more-btn">VIEW RESULTS</a>
                         </div>
                     </div>
 
@@ -224,7 +170,7 @@
                                 (PCM). Scored 69% in 12<sup>th</sup> and 70% in 10<sup>th</sup> boards. It was here that
                                 a deep interest in computers and logic took root, sparking the dream to build worlds,
                                 not just study them.</p>
-                            <a href="school-results.html" class="view-more-btn">VIEW RESULTS</a>
+                            <a href="pages/school-results.html" class="view-more-btn">VIEW RESULTS</a>
                         </div>
                         <div class="timeline-dot"></div>
                     </div>
@@ -251,10 +197,10 @@
 
                 <div class="showcase-flex">
                 <!-- Entry 1: Certificates -->
-                <a href="certificates.html" style="text-decoration: none; display: block;" class="animate-on-scroll fade-in delay-100">
+                <a href="pages/certificates.html" style="text-decoration: none; display: block;" class="animate-on-scroll fade-in delay-100">
                     <div class="showcase-card float-hover">
                             <div class="showcase-img-wrapper">
-                                <img src="./images/certificate.jpg" alt="Certificates">
+                                <img src="assets/images/certificates/certificate.jpg" alt="Certificates" loading="lazy">
                             </div>
                             <div class="showcase-header-wrapper">
                                 <h1 class="main-title">Certificates</h1>
@@ -264,10 +210,10 @@
                     </a>
 
                 <!-- Entry 2: Achievements -->
-                <a href="achievements.html" style="text-decoration: none; display: block;" class="animate-on-scroll fade-in delay-200">
+                <a href="pages/achievements.html" style="text-decoration: none; display: block;" class="animate-on-scroll fade-in delay-200">
                     <div class="showcase-card float-hover">
                             <div class="showcase-img-wrapper">
-                                <img src="./images/trophy.png" alt="Achievements">
+                                <img src="assets/images/backgrounds/trophy.png" alt="Achievements" loading="lazy">
                             </div>
                             <div class="showcase-header-wrapper">
                                 <h1 class="main-title">Achievements</h1>
@@ -277,10 +223,10 @@
                     </a>
 
                 <!-- Entry 3: Projects -->
-                <a href="projects.html" style="text-decoration: none; display: block;" class="animate-on-scroll fade-in delay-300">
+                <a href="pages/projects.html" style="text-decoration: none; display: block;" class="animate-on-scroll fade-in delay-300">
                     <div class="showcase-card float-hover">
                             <div class="showcase-img-wrapper">
-                                <img src="./images/project.png" alt="Projects">
+                                <img src="assets/images/backgrounds/project.png" alt="Projects" loading="lazy">
                             </div>
                             <div class="showcase-header-wrapper">
                                 <h1 class="main-title">Projects</h1>
@@ -289,10 +235,10 @@
                         </div>
                     </a>
                 <!-- EXTRA CURRICULAR SECTION -->
-                <a href="extra-curricular.html" style="text-decoration: none; display: block;" class="animate-on-scroll fade-in delay-400">
+                <a href="pages/extra-curricular.html" style="text-decoration: none; display: block;" class="animate-on-scroll fade-in delay-400">
                     <div class="showcase-card float-hover">
                             <div class="showcase-img-wrapper">
-                                <img src="./images/ExtraCurricular.jpg" alt="Extra Curricular">
+                                <img src="assets/images/backgrounds/ExtraCurricular.jpg" alt="Extra Curricular" loading="lazy">
                             </div>
                             <div class="showcase-header-wrapper">
                                 <h1 class="main-title">Extra Curricular</h1>
@@ -322,11 +268,11 @@
                     <div class="footer-col">
                         <h4>LATEST PROJECTS</h4>
                         <ul>
-                            <li><a href="projects.html#proj-secretbook">THE SECRET BOOK</a></li>
-                            <li><a href="projects.html#proj-sharpshooter">SHARP SHOOTER</a></li>
-                            <li><a href="projects.html#proj-royalrun">ROYAL RUN</a></li>
-                            <li><a href="projects.html#proj-galaxystrike">GALAXY STRIKE</a></li>
-                            <li><a href="projects.html#proj-rocketboost">ROCKET BOOST</a></li>
+                            <li><a href="pages/projects.html#proj-secretbook">THE SECRET BOOK</a></li>
+                            <li><a href="pages/projects.html#proj-sharpshooter">SHARP SHOOTER</a></li>
+                            <li><a href="pages/projects.html#proj-royalrun">ROYAL RUN</a></li>
+                            <li><a href="pages/projects.html#proj-galaxystrike">GALAXY STRIKE</a></li>
+                            <li><a href="pages/projects.html#proj-rocketboost">ROCKET BOOST</a></li>
                         </ul>
                     </div>
 
@@ -335,8 +281,8 @@
                         <h4>PORTFOLIO</h4>
                         <ul>
                             <li><a href="#parallax-container">HOME</a></li>
-                            <li><a href="certificates.html">CERTIFICATES</a></li>
-                            <li><a href="projects.html">PROJECTS</a></li>
+                            <li><a href="pages/certificates.html">CERTIFICATES</a></li>
+                            <li><a href="pages/projects.html">PROJECTS</a></li>
                             <li><a href="https://github.com/Nathanieal06">GITHUB</a></li>
                             <li><a href="Resume/Nathanieal_Sandipurti_Resume.pdf">RESUME</a></li>
                         </ul>
@@ -349,10 +295,10 @@
                         <h4>NATHANIEAL</h4>
                         <ul>
                             <li><a href="#parallax-container">HOME</a></li>
-                            <li><a href="projects.html">PORTFOLIO</a></li>
-                            <li><a href="achievements.html">ACHIEVEMENTS</a></li>
-                            <li><a href="certificates.html">CERTIFICATES</a></li>
-                            <li><a href="feedback.html">FEEDBACK</a></li>
+                            <li><a href="pages/projects.html">PORTFOLIO</a></li>
+                            <li><a href="pages/achievements.html">ACHIEVEMENTS</a></li>
+                            <li><a href="pages/certificates.html">CERTIFICATES</a></li>
+                            <li><a href="pages/feedback.html">FEEDBACK</a></li>
                         </ul>
                     </div>
                 </div>
@@ -362,10 +308,10 @@
                 <div class="modern-footer-bottom">
                     <ul class="footer-bottom-links">
                         <li><a href="#parallax-container">HOME</a></li>
-                        <li><a href="projects.html">PORTFOLIO</a></li>
-                        <li><a href="achievements.html">ACHIEVEMENTS</a></li>
-                        <li><a href="certificates.html">CERTIFICATES</a></li>
-                        <li><a href="feedback.html">BIOGRAPHY & CONTACT</a></li>
+                        <li><a href="pages/projects.html">PORTFOLIO</a></li>
+                        <li><a href="pages/achievements.html">ACHIEVEMENTS</a></li>
+                        <li><a href="pages/certificates.html">CERTIFICATES</a></li>
+                        <li><a href="pages/feedback.html">BIOGRAPHY & CONTACT</a></li>
                     </ul>
                 </div>
             </footer>
@@ -391,13 +337,13 @@
                 <path
                     d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
             </svg></a>
-        <a href="feedback.html" aria-label="Contact / Feedback"><svg viewBox="0 0 24 24">
+        <a href="pages/feedback.html" aria-label="Contact / Feedback"><svg viewBox="0 0 24 24">
                 <path
                     d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
             </svg></a>
     </div>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 </body>
 
