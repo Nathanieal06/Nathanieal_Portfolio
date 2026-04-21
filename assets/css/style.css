@@ -8,12 +8,37 @@
   box-sizing: border-box;
 }
 
+/* --- Global Fluid Typography & Scaling --- */
+html {
+  font-size: 16px;
+}
+
+/* Large Desktop Optimization (fit 100%) */
+@media screen and (min-width: 1440px) {
+  html { font-size: 1.15vw; }
+}
+@media screen and (min-width: 1920px) {
+  html { font-size: 1.35vw; }
+}
+
+/* Mobile & Tablet Optimizations */
+@media screen and (max-width: 1024px) {
+  html { font-size: 15px; }
+}
+@media screen and (max-width: 768px) {
+  html { font-size: 13px; }
+}
+@media screen and (max-width: 480px) {
+  html { font-size: 11px; }
+}
+
 html,
 body {
   margin: 0;
   height: 100vh;
+  overflow-x: hidden;
   /* Hard stop at 50% creates a sharp line */
-  background: #FEDCC8
+  background: #FEDCC8;
 }
 
 .parallax {
@@ -284,11 +309,12 @@ body {
 
 .education-bg {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1000px;
-  max-width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   opacity: 0.4;
   z-index: 0;
   pointer-events: none;
@@ -3895,7 +3921,7 @@ body.result-page-body {
   --coral-accent: #e8816a;
 }
 
-body {
+body[data-page="extra-curricular"] {
   background-color: var(--bg-dark);
   color: #FEDCC8;
   font-family: 'Jost', sans-serif;
@@ -3907,7 +3933,7 @@ body {
   margin: 0;
 }
 
-h1 {
+body[data-page="extra-curricular"] h1 {
   font-weight: 300;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -3915,17 +3941,17 @@ h1 {
   margin-bottom: 10px;
 }
 
-p {
+body[data-page="extra-curricular"] p {
   font-weight: 300;
   color: rgba(254, 220, 200, 0.8);
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
   max-width: 600px;
   line-height: 1.6;
   font-size: 1.1rem;
 }
 
-a.back-btn {
+body[data-page="extra-curricular"] a.back-btn {
   display: inline-block;
   padding: 12px 28px;
   color: var(--bg-dark);
@@ -3938,7 +3964,7 @@ a.back-btn {
   text-transform: uppercase;
 }
 
-a.back-btn:hover {
+body[data-page="extra-curricular"] a.back-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(238, 120, 110, 0.3);
   color: #fff;
