@@ -75,7 +75,9 @@ document.addEventListener('DOMContentLoaded', function () {
             <li class="has-dropdown">
                 <a href="${root}pages/projects.html"${act('projects')}><svg class="nav-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg> <span class="nav-text">Projects</span> <span class="nav-arrow">&#9660;</span></a>
                 <ul class="nav-dropdown-menu">
+                    <li><a href="${root}pages/projects.html#proj-unityrpg">Unity RPG</a></li>
                     <li><a href="${root}pages/projects.html#proj-secretbook">The Secret Book</a></li>
+                    <li><a href="${root}pages/projects.html#proj-sihmap">SIH Map</a></li>
                     <li><a href="${root}pages/projects.html#proj-sharpshooter">Sharp Shooter</a></li>
                     <li><a href="${root}pages/projects.html#proj-royalrun">Royal Run</a></li>
                     <li><a href="${root}pages/projects.html#proj-galaxystrike">Galaxy Strike</a></li>
