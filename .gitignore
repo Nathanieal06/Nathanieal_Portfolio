@@ -12,3 +12,8 @@ desktop.ini
 
 # Node (if ever added)
 node_modules/
+
+# Unity WebGL Builds (Large Files)
+assets/Projects/*/Build/
+*.data
+*.wasm
