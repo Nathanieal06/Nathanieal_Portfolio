@@ -26,10 +26,10 @@ html {
   html { font-size: 15px; }
 }
 @media screen and (max-width: 768px) {
-  html { font-size: 13px; }
+  html { font-size: 14px; }
 }
 @media screen and (max-width: 480px) {
-  html { font-size: 11px; }
+  html { font-size: 13px; }
 }
 
 html,
@@ -357,6 +357,21 @@ body {
   transform: translateX(-50%);
 }
 
+.timeline::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  height: calc((100% - 16px) * var(--scroll-progress, 0));
+  width: 3px;
+  background: var(--coral-accent);
+  transform: translateX(-50%);
+  z-index: 1;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(232, 129, 106, 0.6);
+  transition: height 0.1s ease-out;
+}
+
 /* Each row */
 .timeline-item {
   display: flex;
@@ -465,7 +480,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  .timeline::before {
+  .timeline::before,
+  .timeline::after {
     left: 20px;
   }
   .timeline-item.left,
@@ -477,9 +493,8 @@ body {
   }
   .timeline-item.left .timeline-dot,
   .timeline-item.right .timeline-dot {
-    left: 20px;
+    left: 12px;
     right: auto;
-    transform: translateX(-50%);
   }
   .timeline-content {
     max-width: 100%;
@@ -773,6 +788,36 @@ body {
 .nav-menu>li:hover .nav-arrow {
   transform: rotate(180deg);
   opacity: 1;
+}
+
+.nav-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-text {
+    display: none;
+  }
+  .nav-icon {
+    display: inline-block;
+  }
+  .nav-menu {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .nav-menu > li > a {
+    padding: 10px 8px;
+  }
+  .nav-arrow {
+    display: none;
+  }
+  .nav-container {
+    padding: 10px;
+    justify-content: center;
+  }
+  .nav-brand {
+    display: none;
+  }
 }
 
 /* ── HOVER BRIDGE — keeps dropdown alive while mouse crosses the gap ── */
@@ -3585,20 +3630,31 @@ body.result-page-body {
 
 
 
-/* Timeline Vertical Line Animation */
-.timeline::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 8px;
-  height: calc(var(--scroll-progress, 0) * (100% - 16px));
-  width: 3px;
-  background: var(--coral-accent);
-  transform: translateX(-50%);
-  z-index: 1;
-  border-radius: 3px;
-  box-shadow: 0 0 10px rgba(232, 129, 106, 0.6);
-  transition: height 0.1s ease-out;
+/* --- Mobile Specific Fixes --- */
+@media (max-width: 768px) {
+  /* 1. Make text readable */
+  .timeline-content p, .about-bio-col p {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  
+  /* 2. Make milestone and work section 1x1 layout */
+  .showcase-flex {
+    grid-template-columns: 1fr;
+  }
+  
+  /* 3. Socials at bottom horizontal */
+  .floating-socials {
+    flex-direction: row;
+    bottom: 15px;
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, 20px);
+    width: auto;
+  }
+  .floating-socials.visible {
+    transform: translate(-50%, 0);
+  }
 }
 
 
