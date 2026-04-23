@@ -4126,12 +4126,10 @@ body.result-page-body {
 /* ==========================================================================
    EXTRA CURRICULAR PAGE
    ========================================================================== */
-:root {
-  --bg-dark: #1a0a1e;
-  --coral-accent: #e8816a;
-}
 
 body[data-page="extra-curricular"] {
+  --bg-dark: #1a0a1e;
+  --coral-accent: #e8816a;
   background-color: var(--bg-dark);
   color: #FEDCC8;
   font-family: 'Jost', sans-serif;
