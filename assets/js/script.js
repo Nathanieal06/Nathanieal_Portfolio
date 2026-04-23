@@ -167,20 +167,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
-
-// 10. Hide Skeleton Loader on Full Page Load
-window.addEventListener("load", () => {
-    const skeleton = document.getElementById("global-skeleton-loader");
-    if (skeleton) {
-        // Add a small delay to let the animation run once and look smooth
-        setTimeout(() => {
-            skeleton.classList.add("hidden");
-            // Remove from DOM after transition finishes (600ms matching CSS)
-            setTimeout(() => {
-                if (skeleton.parentNode) {
-                    skeleton.parentNode.removeChild(skeleton);
-                }
-            }, 600);
-        }, 300);
-    }
-});

@@ -110,23 +110,4 @@ document.addEventListener('DOMContentLoaded', function () {
     if (footerSlot) {
         footerSlot.outerHTML = footerHTML;
     }
-
-    // ── Inject Skeleton Loader ────────────────────────────────────────────────
-    const skeletonHTML = `
-    <div id="global-skeleton-loader">
-        <div class="skel-nav">
-            <div class="skel-brand"></div>
-            <div class="skel-menu">
-                <div class="skel-menu-item"></div>
-                <div class="skel-menu-item"></div>
-                <div class="skel-menu-item"></div>
-            </div>
-        </div>
-        <div class="skel-content">
-            <div class="skel-title"></div>
-            <div class="skel-subtitle"></div>
-            <div class="skel-title" style="width: 80%; height: 200px; border-radius: 20px;"></div>
-        </div>
-    </div>`;
-    document.body.insertAdjacentHTML('afterbegin', skeletonHTML);
 });
