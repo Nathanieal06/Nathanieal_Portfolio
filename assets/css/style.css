@@ -670,9 +670,13 @@ body {
 }*/
 
 @media (max-width: 900px) {
+  .showcase-flex {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
   .showcase-card {
-    transform: scale(0.6);
-    margin: -30px 0;
+    transform: scale(0.9);
+    margin: 0;
   }
 }
 
@@ -1047,11 +1051,11 @@ body {
 .hero-name {
   font-family: 'Jost', sans-serif;
   font-weight: 300;
-  font-size: clamp(4rem, 8vw, 15rem);
-  letter-spacing: clamp(0.5rem, 1.5vw, 2.5rem);
+  font-size: clamp(2.5rem, 8vw, 15rem);
+  letter-spacing: clamp(0.2rem, 1.5vw, 2.5rem);
   color: var(--bg-dark);
   margin: 0;
-  margin-right: calc(-1 * clamp(0.5rem, 1.5vw, 2.5rem));
+  margin-right: calc(-1 * clamp(0.2rem, 1.5vw, 2.5rem));
 }
 
 .hero-title {
@@ -4218,4 +4222,148 @@ body[data-page="extra-curricular"] a.back-btn:hover {
 .s:nth-child(7n+1) {
   animation-delay: 2.2s;
   animation-duration: 2s;
+}
+
+/* ════════════════════════════════════════════════════════════
+   SKELETON LOADER
+   ════════════════════════════════════════════════════════════ */
+#global-skeleton-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  background: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  padding: 13px 44px;
+  gap: 40px;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#global-skeleton-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Skeleton animation */
+@keyframes skeletonPulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.5; }
+}
+
+.skel-nav {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.skel-brand {
+  width: 150px;
+  height: 14px;
+  background: rgba(232, 129, 106, 0.2);
+  border-radius: 4px;
+  animation: skeletonPulse 1.5s infinite ease-in-out;
+}
+
+.skel-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.skel-menu-item {
+  width: 80px;
+  height: 14px;
+  background: rgba(232, 129, 106, 0.2);
+  border-radius: 4px;
+  animation: skeletonPulse 1.5s infinite ease-in-out;
+}
+
+.skel-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.skel-title {
+  width: 60%;
+  height: 60px;
+  background: rgba(232, 129, 106, 0.15);
+  border-radius: 8px;
+  animation: skeletonPulse 1.5s infinite ease-in-out;
+}
+
+.skel-subtitle {
+  width: 40%;
+  height: 24px;
+  background: rgba(232, 129, 106, 0.15);
+  border-radius: 6px;
+  animation: skeletonPulse 1.5s infinite ease-in-out;
+}
+
+@media (max-width: 768px) {
+  #global-skeleton-loader {
+    padding: 8px 10px;
+  }
+  .skel-brand { display: none; }
+  .skel-menu { width: 100%; justify-content: space-between; }
+  .skel-menu-item { width: 30px; height: 30px; border-radius: 50%; }
+  .skel-title { width: 80%; height: 40px; }
+  .skel-subtitle { width: 60%; height: 20px; }
+}
+
+/* ════════════════════════════════════════════════════════════
+   GENERAL MOBILE UX OVERRIDES
+   ════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* Enlarge touch targets on buttons */
+  .view-more-btn, .contact-btn {
+    padding: 12px 24px !important;
+    font-size: 0.95rem;
+  }
+  
+  /* Collapse stat grid */
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Increase timeline line width slightly and spacing */
+  .timeline::before {
+    width: 2px;
+  }
+  .timeline::after {
+    width: 4px;
+  }
+  
+  /* Improve base typography padding on mobile */
+  .about-bio-col p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+  
+  /* Footer mobile padding */
+  .footer-contact-row {
+    gap: 40px;
+    padding: 0 15px 40px;
+  }
+  
+  /* Make floating socials easier to hit */
+  .floating-socials a {
+    width: 50px;
+    height: 50px;
+  }
+  .floating-socials a svg {
+    width: 24px;
+    height: 24px;
+  }
 }
