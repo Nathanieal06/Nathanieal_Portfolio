@@ -15,21 +15,34 @@ html {
 
 /* Large Desktop Optimization (fit 100%) */
 @media screen and (min-width: 1440px) {
-  html { font-size: 1.15vw; }
+  html {
+    font-size: 1.15vw;
+  }
 }
+
 @media screen and (min-width: 1920px) {
-  html { font-size: 1.35vw; }
+  html {
+    font-size: 1.35vw;
+  }
 }
 
 /* Mobile & Tablet Optimizations */
 @media screen and (max-width: 1024px) {
-  html { font-size: 15px; }
+  html {
+    font-size: 15px;
+  }
 }
+
 @media screen and (max-width: 768px) {
-  html { font-size: 14px; }
+  html {
+    font-size: 14px;
+  }
 }
+
 @media screen and (max-width: 480px) {
-  html { font-size: 13px; }
+  html {
+    font-size: 13px;
+  }
 }
 
 html,
@@ -43,7 +56,9 @@ body {
 }
 
 @supports (-webkit-touch-callout: none) {
-  html, body {
+
+  html,
+  body {
     height: -webkit-fill-available;
   }
 }
@@ -509,10 +524,12 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .timeline::before,
   .timeline::after {
     left: 20px;
   }
+
   .timeline-item.left,
   .timeline-item.right {
     flex-direction: row;
@@ -520,14 +537,17 @@ body {
     padding-left: 50px;
     padding-right: 0;
   }
+
   .timeline-item.left .timeline-dot,
   .timeline-item.right .timeline-dot {
     left: 12px;
     right: auto;
   }
+
   .timeline-content {
     max-width: 100%;
   }
+
   .backstory-title {
     font-size: 2.2rem;
   }
@@ -688,7 +708,8 @@ body {
   flex-wrap: wrap;
 }
 
-.footer-contact-item, .fc-link {
+.footer-contact-item,
+.fc-link {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -883,25 +904,31 @@ body {
   .nav-text {
     display: none;
   }
+
   .nav-icon {
     display: inline-block;
     width: 20px;
     height: 20px;
   }
+
   .nav-menu {
     width: 100%;
     justify-content: space-between;
   }
-  .nav-menu > li > a {
+
+  .nav-menu>li>a {
     padding: 8px 6px;
   }
+
   .nav-arrow {
     display: none;
   }
+
   .nav-container {
     padding: 8px 10px;
     justify-content: center;
   }
+
   .nav-brand {
     display: none;
   }
@@ -2838,7 +2865,8 @@ body.result-page-body {
   left: 0;
   width: 100%;
   height: 100%;
-  transform: none; /* Override global .parallax__layer img */
+  transform: none;
+  /* Override global .parallax__layer img */
   object-fit: cover;
   object-position: center bottom;
   filter: brightness(1.3) contrast(1.1);
@@ -3089,26 +3117,32 @@ body.result-page-body {
     padding: 40px 0;
     width: 95%;
   }
+
   .proj-content {
     padding: 30px 20px;
   }
+
   .proj-header {
     margin-bottom: 25px;
   }
+
   .proj-body-grid {
     gap: 30px;
   }
+
   .asym-gallery {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
+
   .gallery-img {
     height: auto;
     width: 100%;
     grid-column: auto !important;
     grid-row: auto !important;
   }
+
   .gallery-img img {
     height: auto;
     max-height: 250px;
@@ -3726,17 +3760,19 @@ body.result-page-body {
 
 /* --- Mobile Specific Fixes --- */
 @media (max-width: 768px) {
+
   /* 1. Make text readable */
-  .timeline-content p, .about-bio-col p {
+  .timeline-content p,
+  .about-bio-col p {
     font-size: 1.1rem;
     font-weight: 400;
   }
-  
+
   /* 2. Make milestone and work section 1x1 layout */
   .showcase-flex {
     grid-template-columns: 1fr;
   }
-  
+
   /* 3. Socials at bottom horizontal */
   .floating-socials {
     flex-direction: row;
@@ -3746,6 +3782,7 @@ body.result-page-body {
     transform: translate(-50%, 20px);
     width: auto;
   }
+
   .floating-socials.visible {
     transform: translate(-50%, 0);
   }
