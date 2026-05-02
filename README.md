@@ -28,4 +28,4 @@ Nathanieal_Portfolio/
 5. **Rocket Boost** — Obstacle course game
 
 ## 📄 Live Demo
-Open `index.html` in any modern browser.
+Open `https://nathanieal-portfolio.vercel.app/` in any modern browser.
