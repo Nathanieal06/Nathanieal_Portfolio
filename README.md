@@ -30,10 +30,3 @@ Nathanieal_Portfolio/
 ## 📄 Live Demo
 Open `https://nathanieal-portfolio.vercel.app/` in any modern browser.
 
-## 🤝 Getting Started
-1. Clone the repository
-2. Open `index.html` in your browser
-3. No installation or build process required
-
-## 📧 Contact
-For inquiries or collaboration opportunities, feel free to reach out through the portfolio website.
