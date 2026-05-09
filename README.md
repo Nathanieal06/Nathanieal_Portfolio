@@ -20,12 +20,7 @@ Nathanieal_Portfolio/
 └── resume/             ← PDF résumé
 ```
 
-## 🕹️ Projects Featured
-1. **The Secret Book** — 2nd place, Zimension Game Jam 2025
-2. **Sharp Shooter** — Unity FPS arena game
-3. **Royal Run** — Endless runner
-4. **Galaxy Strike** — Space shooter
-5. **Rocket Boost** — Obstacle course game
 
 ## 📄 Live Demo
-Open `index.html` in any modern browser.
+Open `https://nathanieal-portfolio.vercel.app/` in any modern browser.
+
