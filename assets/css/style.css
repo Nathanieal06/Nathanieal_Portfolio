@@ -2353,6 +2353,7 @@ body.result-page-body {
 
 .cert-scroller {
   height: 100vh;
+  height: 100dvh;
   width: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -2366,12 +2367,14 @@ body.result-page-body {
 
 .cert-slide {
   height: 100vh;
+  height: 100dvh;
   width: 100%;
   scroll-snap-align: start;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 10vw;
+  justify-content: center;
+  gap: 6vw;
+  padding: 0 8vw 12vh 8vw;
   box-sizing: border-box;
   position: relative;
 }
@@ -2382,9 +2385,8 @@ body.result-page-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   z-index: 2;
-  animation: certTextIn linear both;
-  animation-timeline: view();
 }
 
 .cert-huge-title {
@@ -2431,21 +2433,23 @@ body.result-page-body {
 
 /* Image Wrap & Animation */
 .cert-image-wrap {
-  flex: 0 0 50%;
+  flex: 0 0 45%;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
-  animation: certSlideIn linear both;
-  animation-timeline: view();
 }
 
 .cert-image-wrap img {
   max-width: 100%;
-  max-height: 70vh;
+  max-height: 60vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(254, 220, 200, 0.08);
+  display: block;
 }
 
 /* Dots navigation */
@@ -2547,8 +2551,6 @@ body.result-page-body {
 }
 
 .cert-slide:nth-child(even) .cert-content {
-  animation: certTextInReverse linear both;
-  animation-timeline: view();
 }
 
 .cert-slide:nth-child(even) .cert-desc-box {
