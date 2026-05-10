@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zatun Zombie Game - Case Study | Nathanieal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/components.js"></script>
+</head>
+<body class="project-detail-body" data-page="project-detail" data-root="../">
+    <div id="global-skeleton-loader"></div>
+    <div id="site-nav"></div>
+
+    <header class="project-detail-hero">
+        <img src="../assets/images/projects/Zatun_Unity_Developer_Test/Zombie_Gamplay%20(1).png" alt="Zatun Zombie Hero Background" class="project-detail-hero-bg">
+        <div class="project-detail-hero-overlay"></div>
+        <div class="project-detail-hero-content animate-on-scroll slide-up">
+            <h1>Zatun Zombie Game</h1>
+            <div class="project-detail-tags">
+                <span>Unity 6</span>
+                <span>C#</span>
+                <span>URP</span>
+                <span>NavMesh AI</span>
+                <span>Animation Rigging</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="project-detail-main">
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Project Overview</h2>
+            <p class="pd-text">
+                A high-fidelity third-person zombie survival shooter built entirely from scratch in Unity 6 as a technical test for Zatun. This project was developed to showcase production-ready gameplay programming skills, featuring responsive gunplay, NavMesh-driven enemy AI, procedural animation rigging, a key-based gate progression system, and cinematic narrative sequences—all optimized for high performance.
+            </p>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Technical Deep Dive & Game Logic</h2>
+            <p class="pd-text">To meet the rigorous requirements of a technical developer test, I focused on building highly optimized, scalable systems utilizing modern Unity features.</p>
+            
+            <div class="tech-deep-dive-grid">
+                <div class="tech-card">
+                    <h3>My Contributions</h3>
+                    <ul>
+                        <li><strong>Combat System:</strong> Engineered a hybrid hitscan-projectile combat system for 100% reliable hit detection, ensuring responsive gunplay.</li>
+                        <li><strong>Shader Development:</strong> Authored custom URP-compatible dissolve shaders using SRP Batcher-friendly CBUFFER blocks to handle enemy deaths and VFX.</li>
+                        <li><strong>Input & Audio:</strong> Integrated the New Input System for robust cross-platform controls, and implemented spatialized 3D zombie audio.</li>
+                    </ul>
+                </div>
+                <div class="tech-card">
+                    <h3>Game Mechanics & Physics</h3>
+                    <ul>
+                        <li><strong>IK Animation Rigging:</strong> Implemented IK-driven procedural animation rigging for natural weapon aiming, spine bending, and procedural head tracking.</li>
+                        <li><strong>Optimized AI Spawner:</strong> Developed a throttled NavMesh AI spawner capable of maintaining 60+ FPS while managing multiple active agents, utilizing object pooling.</li>
+                        <li><strong>State Management:</strong> Engineered the core progression logic, enforcing strict player state management (e.g., dual-key inventory systems, conditional gates).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Was Built -->
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">How It Was Built — Step by Step</h2>
+            <div class="build-steps-grid">
+                <div class="build-steps-list">
+                    <div class="build-step">
+                        <div class="build-step-num">01</div>
+                        <div class="build-step-body">
+                            <h4>Project Setup & Scene Design</h4>
+                            <p>Configured a new Unity 6 project with URP rendering pipeline, imported key packages (Cinemachine, New Input System, NavMesh), and designed the zombie environment map layout.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">02</div>
+                        <div class="build-step-body">
+                            <h4>Player Controller & Combat</h4>
+                            <p>Built a third-person player controller with smooth camera follow via Cinemachine. Implemented a hybrid hitscan-projectile gun system for 100% reliable hit detection on any target collider type.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">03</div>
+                        <div class="build-step-body">
+                            <h4>Zombie AI & NavMesh Baking</h4>
+                            <p>Baked a NavMesh across the entire level, then coded the zombie FSM — Idle → Chase → Attack → Death. Zombies pathfind around obstacles and react to player proximity in real time.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">04</div>
+                        <div class="build-step-body">
+                            <h4>IK Animation Rigging & Dissolve Shader</h4>
+                            <p>Applied Unity's Animation Rigging package for procedural IK so the player's arms always aim accurately. Authored a custom URP dissolve shader for satisfying enemy death VFX.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">05</div>
+                        <div class="build-step-body">
+                            <h4>Progression & Key System</h4>
+                            <p>Designed the dual-key inventory system where the player must find a Normal Key to open gates and a Victory Key to trigger the win condition, enforcing strict linear progression.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">06</div>
+                        <div class="build-step-body">
+                            <h4>Polish, Audio & Optimization</h4>
+                            <p>Added 3D spatialized zombie growls, weapon fire/reload audio, pause menu, options volume sliders, and ran performance profiling to maintain 60+ FPS throughout the entire game.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">What I Accomplished</h2>
+            <p class="pd-text">
+                This technical test was a major achievement in independently delivering a polished vertical slice within tight constraints. I learned to seamlessly integrate Cinemachine with custom player physics, resolved complex bugs related to NavMesh initialization crashes during scene loads, and optimized LayerMask-based physics checks to keep the game running smoothly. 
+            </p>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Gameplay Demo</h2>
+            <div class="pd-video-wrapper">
+                <iframe src="https://www.youtube.com/embed/9JZCpagN9D0" title="Zatun Zombie Game – Gameplay Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Screenshot Gallery</h2>
+            <div class="pd-gallery">
+                <a href="../assets/images/projects/Zatun_Unity_Developer_Test/Zombie_Gamplay%20(1).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/Zatun_Unity_Developer_Test/Zombie_Gamplay%20(1).png" alt="Screenshot 1" loading="lazy"></a>
+                <a href="../assets/images/projects/Zatun_Unity_Developer_Test/Zombie_Gamplay%20(2).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/Zatun_Unity_Developer_Test/Zombie_Gamplay%20(2).png" alt="Screenshot 2" loading="lazy"></a>
+                <a href="../assets/images/projects/Zatun_Unity_Developer_Test/Zombie_Gamplay%20(3).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/Zatun_Unity_Developer_Test/Zombie_Gamplay%20(3).png" alt="Screenshot 3" loading="lazy"></a>
+                <a href="../assets/images/projects/Zatun_Unity_Developer_Test/Zombie_Gamplay%20(4).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/Zatun_Unity_Developer_Test/Zombie_Gamplay%20(4).png" alt="Screenshot 4" loading="lazy"></a>
+            </div>
+        </section>
+
+        <div class="pd-actions animate-on-scroll slide-up">
+            <a href="../pages/projects.html" class="pd-btn pd-btn-secondary">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg>
+                Back to Projects
+            </a>
+            <a href="https://github.com/Nathanieal06/Zatun_Unity_Developer_Test" target="_blank" class="pd-btn">
+                View GitHub
+            </a>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

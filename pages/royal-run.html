@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Run - Case Study | Nathanieal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/components.js"></script>
+</head>
+<body class="project-detail-body" data-page="project-detail" data-root="../">
+    <div id="global-skeleton-loader"></div>
+    <div id="site-nav"></div>
+
+    <header class="project-detail-hero">
+        <img src="../assets/images/projects/royal-run/Royal_Run_1.png" alt="Royal Run Hero Background" class="project-detail-hero-bg">
+        <div class="project-detail-hero-overlay"></div>
+        <div class="project-detail-hero-content animate-on-scroll slide-up">
+            <h1>Royal Run</h1>
+            <div class="project-detail-tags">
+                <span>Unity 3D</span>
+                <span>C#</span>
+                <span>Cinemachine</span>
+                <span>Unity Particle System</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="project-detail-main">
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Project Overview</h2>
+            <p class="pd-text">
+                "Royal Run" is a 3D endless runner game inspired by classics like Temple Run and Subway Surfers. It tests players' reflexes as they navigate an infinite pathway, collecting coins and apples while avoiding obstacles. The core focus of this project was to understand procedural generation and memory management in an endless environment.
+            </p>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Technical Deep Dive & Game Logic</h2>
+            <p class="pd-text">To create an "endless" game, the environment cannot actually stretch to infinity. I had to implement clever procedural generation techniques to create the illusion of an endless world.</p>
+            
+            <div class="tech-deep-dive-grid">
+                <div class="tech-card">
+                    <h3>My Contributions</h3>
+                    <ul>
+                        <li><strong>Procedural Level Generation:</strong> Engineered a system that dynamically instantiates and positions terrain "chunks" just ahead of the player to create an infinite track.</li>
+                        <li><strong>Player Movement & Controls:</strong> Programmed smooth, lane-based WASD controls, allowing for snappy sidestepping, jumping, and sliding mechanics.</li>
+                        <li><strong>Camera Tracking:</strong> Integrated Unity's Cinemachine via C# scripts to create a dynamic, smooth-following camera that adjusts its FOV based on player speed.</li>
+                    </ul>
+                </div>
+                <div class="tech-card">
+                    <h3>Game Mechanics & Physics</h3>
+                    <ul>
+                        <li><strong>Object Pooling:</strong> Instead of constantly destroying and creating new terrain chunks (which causes garbage collection spikes), I implemented Object Pooling to recycle environment chunks that fall behind the player.</li>
+                        <li><strong>Collision & Triggers:</strong> Designed rigid-body collision detection for obstacle impact and trigger volumes for collecting coins and power-ups.</li>
+                        <li><strong>Score Management:</strong> Built an event-driven UI and score management system that accurately scales score based on distance traveled and items collected.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Was Built -->
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">How It Was Built — Step by Step</h2>
+            <div class="build-steps-grid">
+                <div class="build-steps-list">
+                    <div class="build-step">
+                        <div class="build-step-num">01</div>
+                        <div class="build-step-body">
+                            <h4>Core Mechanic Design</h4>
+                            <p>Defined the lane-based movement mechanics and obstacle interaction rules. Focused on creating a responsive and intuitive control scheme suitable for an endless runner.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">02</div>
+                        <div class="build-step-body">
+                            <h4>Chunk System Implementation</h4>
+                            <p>Developed a library of level "chunks" that can be seamlessly connected. Each chunk contains a unique set of obstacles, coins, and environment details.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">03</div>
+                        <div class="build-step-body">
+                            <h4>Procedural Generation Logic</h4>
+                            <p>Scripted the logic to spawn new chunks ahead of the player while recycling older ones behind. Implemented random selection to ensure each run feels fresh and unpredictable.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">04</div>
+                        <div class="build-step-body">
+                            <h4>Player Physics & Animation</h4>
+                            <p>Configured the player character's movement physics for sidestepping, jumping, and sliding. Integrated animations with movement speed for a smooth visual experience.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">05</div>
+                        <div class="build-step-body">
+                            <h4>Object Pooling Optimization</h4>
+                            <p>Implemented an object pooling system for obstacles and collectables. This minimizes the performance cost of frequent instantiation and destruction, ensuring stable FPS.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">06</div>
+                        <div class="build-step-body">
+                            <h4>Score & UI Integration</h4>
+                            <p>Created a dynamic UI for score tracking, coin collection, and game-over states. Balanced the difficulty curve to increase speed and obstacle density as the player progresses.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">What I Accomplished</h2>
+            <p class="pd-text">
+                This project was a major stepping stone in my understanding of memory optimization. Before implementing object pooling, the game would stutter over time. Learning how to manage memory dynamically in C# was a massive accomplishment. I also refined my understanding of Cinemachine, learning how to decouple the camera logic from the player's direct transform hierarchy to prevent jitter.
+            </p>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Gameplay Video</h2>
+            <div class="pd-video-wrapper">
+                <video controls muted preload="metadata" poster="../assets/images/projects/royal-run/Royal_Run_1.png">
+                    <source src="../assets/videos/royal-run.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Screenshot Gallery</h2>
+            <div class="pd-gallery">
+                <a href="../assets/images/projects/royal-run/Royal_Run_1.png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/royal-run/Royal_Run_1.png" alt="Screenshot 1" loading="lazy"></a>
+                <a href="../assets/images/projects/royal-run/Royal_Run_2.png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/royal-run/Royal_Run_2.png" alt="Screenshot 2" loading="lazy"></a>
+                <a href="../assets/images/projects/royal-run/Royal_Run_3.png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/royal-run/Royal_Run_3.png" alt="Screenshot 3" loading="lazy"></a>
+                <a href="../assets/images/projects/royal-run/Royal_Run_4.png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/royal-run/Royal_Run_4.png" alt="Screenshot 4" loading="lazy"></a>
+            </div>
+        </section>
+
+        <div class="pd-actions animate-on-scroll slide-up">
+            <a href="../pages/projects.html" class="pd-btn pd-btn-secondary">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg>
+                Back to Projects
+            </a>
+            <a href="../assets/Projects/RoyalRunBuild/index.html" target="_blank" class="pd-btn">
+                Play Game
+            </a>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

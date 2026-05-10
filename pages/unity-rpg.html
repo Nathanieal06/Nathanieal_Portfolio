@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity RPG - Case Study | Nathanieal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/components.js"></script>
+</head>
+<body class="project-detail-body" data-page="project-detail" data-root="../">
+    <div id="global-skeleton-loader"></div>
+    <div id="site-nav"></div>
+
+    <!-- Hero Section -->
+    <header class="project-detail-hero">
+        <img src="../assets/images/projects/Unity%20RPG/Unity%20RPG%20(1).png" alt="Unity RPG Hero Background" class="project-detail-hero-bg">
+        <div class="project-detail-hero-overlay"></div>
+        <div class="project-detail-hero-content animate-on-scroll slide-up">
+            <h1>Unity RPG</h1>
+            <div class="project-detail-tags">
+                <span>Unity 3D</span>
+                <span>C#</span>
+                <span>RPG Mechanics</span>
+                <span>In Development</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="project-detail-main">
+        <!-- Overview -->
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Project Overview</h2>
+            <p class="pd-text">
+                This project is an expansive, story-driven Role-Playing Game built entirely from scratch in Unity. Currently in active development, it serves as a massive technical playground where I implement robust combat systems, dynamic exploration mechanics, and a highly customized character control system. The goal is to create a seamless, immersive RPG experience that pushes the boundaries of standard Unity capabilities.
+            </p>
+        </section>
+
+        <!-- Technical Deep Dive -->
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Technical Deep Dive & Game Logic</h2>
+            <p class="pd-text">Building a modern RPG requires complex interlocking systems. Here is a breakdown of the core logic and my specific contributions to the codebase.</p>
+            
+            <div class="tech-deep-dive-grid">
+                <div class="tech-card">
+                    <h3>My Contributions</h3>
+                    <ul>
+                        <li><strong>Core Architecture:</strong> Architected the entire game framework in C#, utilizing clean code principles and event-driven architecture to decouple game systems.</li>
+                        <li><strong>Inventory Management:</strong> Designed a highly modular and scriptable-object-driven inventory and itemization system.</li>
+                        <li><strong>Combat & Damage:</strong> Engineered complex state machines for hit detection, combo chains, and damage calculation.</li>
+                    </ul>
+                </div>
+                <div class="tech-card">
+                    <h3>Game Mechanics & Physics</h3>
+                    <ul>
+                        <li><strong>State Machine AI:</strong> Developed a finite state machine (FSM) for enemy AI, allowing NPCs to seamlessly transition between patrolling, chasing, attacking, and fleeing.</li>
+                        <li><strong>Custom Physics Controllers:</strong> Implemented a rigid-body based character controller to handle complex terrain navigation, gravity manipulation, and responsive jumping mechanics.</li>
+                        <li><strong>Animation Rigging:</strong> Integrated Unity's Animator with code-driven blend trees to ensure fluid transitions between combat swings and movement.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Was Built -->
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">How It Was Built — Step by Step</h2>
+            <div class="build-steps-grid">
+                <div class="build-steps-list">
+                    <div class="build-step">
+                        <div class="build-step-num">01</div>
+                        <div class="build-step-body">
+                            <h4>Project Setup & Architecture</h4>
+                            <p>Set up the Unity project with URP, configured the folder structure, and defined the ScriptableObject-based event system to ensure all game systems would remain loosely coupled from day one.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">02</div>
+                        <div class="build-step-body">
+                            <h4>Player Controller & Movement</h4>
+                            <p>Built a custom Rigidbody-based character controller from scratch, handling movement, gravity, jump physics, and slope handling — no default Unity Character Controller used.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">03</div>
+                        <div class="build-step-body">
+                            <h4>Combat & State Machines</h4>
+                            <p>Engineered a finite state machine (FSM) for the combat system covering idle, attack, hit, and death states. Integrated blend trees in the Animator for fluid combat animation transitions.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">04</div>
+                        <div class="build-step-body">
+                            <h4>Inventory & Item System</h4>
+                            <p>Created a modular, ScriptableObject-driven inventory system. Items, weapons, and consumables are data assets that the player can collect, equip, and use — all managed without hardcoded references.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">05</div>
+                        <div class="build-step-body">
+                            <h4>Enemy AI & NavMesh</h4>
+                            <p>Implemented NavMesh-based enemy AI with states for patrolling, chasing, attacking, and fleeing. Enemies dynamically react to the player's position and health level in real time.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">06</div>
+                        <div class="build-step-body">
+                            <h4>World Building & Ongoing Development</h4>
+                            <p>Currently designing the open-world map, quest system, and save/load architecture. Profiling scene performance and iterating on system design for long-term scalability.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- What I Learned -->
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">What I Accomplished</h2>
+            <p class="pd-text">
+                Developing this RPG has been a masterclass in software architecture. I successfully moved away from monolithic "manager" scripts and implemented an event-bus system that drastically improved performance and maintainability. I learned how to profile memory usage for large open-world scenes and optimize NavMesh generation for complex terrain. Moving forward, I am focusing on expanding the quest logic and saving/loading systems.
+            </p>
+        </section>
+
+        <!-- Gameplay Video -->
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Gameplay Video</h2>
+            <div class="pd-video-wrapper">
+                <video controls muted preload="metadata" poster="../assets/images/projects/Unity%20RPG/Unity%20RPG%20(1).png">
+                    <source src="../assets/videos/Unity%20RPG.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Screenshot Gallery</h2>
+            <div class="pd-gallery">
+                <a href="../assets/images/projects/Unity%20RPG/Unity%20RPG%20(1).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/Unity%20RPG/Unity%20RPG%20(1).png" alt="Screenshot 1" loading="lazy"></a>
+                <a href="../assets/images/projects/Unity%20RPG/Unity%20RPG%20(2).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/Unity%20RPG/Unity%20RPG%20(2).png" alt="Screenshot 2" loading="lazy"></a>
+                <a href="../assets/images/projects/Unity%20RPG/Unity%20RPG%20(3).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/Unity%20RPG/Unity%20RPG%20(3).png" alt="Screenshot 3" loading="lazy"></a>
+                <a href="../assets/images/projects/Unity%20RPG/Unity%20RPG%20(4).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/Unity%20RPG/Unity%20RPG%20(4).png" alt="Screenshot 4" loading="lazy"></a>
+            </div>
+        </section>
+
+        <!-- Actions -->
+        <div class="pd-actions animate-on-scroll slide-up">
+            <a href="../pages/projects.html" class="pd-btn pd-btn-secondary">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg>
+                Back to Projects
+            </a>
+            <a href="https://github.com/Nathanieal06" target="_blank" class="pd-btn">
+                View GitHub
+            </a>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

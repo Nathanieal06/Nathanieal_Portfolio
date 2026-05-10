@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Boost - Case Study | Nathanieal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/components.js"></script>
+</head>
+<body class="project-detail-body" data-page="project-detail" data-root="../">
+    <div id="global-skeleton-loader"></div>
+    <div id="site-nav"></div>
+
+    <header class="project-detail-hero">
+        <img src="../assets/images/projects/rocket-boost/Rocket_Boost%20(1).png" alt="Rocket Boost Hero Background" class="project-detail-hero-bg">
+        <div class="project-detail-hero-overlay"></div>
+        <div class="project-detail-hero-content animate-on-scroll slide-up">
+            <h1>Rocket Boost</h1>
+            <div class="project-detail-tags">
+                <span>Unity 3D</span>
+                <span>C#</span>
+                <span>Unity Physics Engine</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="project-detail-main">
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Project Overview</h2>
+            <p class="pd-text">
+                "Rocket Boost" is a 3D exploration demo set on a mysterious lost planet. Players control a lander attempting to navigate treacherous terrain to uncover the secrets of a forgotten civilization. This project was specifically built as a foundational Unity exercise, deeply focused on mastering the core gameplay mechanics, physics interactions, and input handling that form the bedrock of game development.
+            </p>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Technical Deep Dive & Game Logic</h2>
+            <p class="pd-text">The core of "Rocket Boost" lies in its reliance on Unity's built-in physics engine rather than kinematically moving the player via Transform translations.</p>
+            
+            <div class="tech-deep-dive-grid">
+                <div class="tech-card">
+                    <h3>My Contributions</h3>
+                    <ul>
+                        <li><strong>Movement Controllers:</strong> Implemented custom force-based movement controllers in C# that apply relative torque and thrust vectors to a rigid body, simulating realistic propulsion.</li>
+                        <li><strong>Scripting Logic:</strong> Scripted robust collision logic and trigger events to handle landing success vs. crash states based on impact velocity.</li>
+                        <li><strong>Camera Behaviors:</strong> Developed dynamic camera follow behaviors using standard C# logic (pre-Cinemachine) to smoothly track the player without rigid snapping.</li>
+                    </ul>
+                </div>
+                <div class="tech-card">
+                    <h3>Game Mechanics & Physics</h3>
+                    <ul>
+                        <li><strong>Rigid-Body Physics:</strong> Heavily utilized `Rigidbody.AddRelativeForce` and `Rigidbody.AddRelativeTorque` to decouple the visual rotation from the physics constraints.</li>
+                        <li><strong>State Management:</strong> Implemented a simple state machine to prevent player input during death sequences or level transition animations.</li>
+                        <li><strong>Audio Integration:</strong> Linked engine thrust audio pitch and volume to the current input axis, creating responsive auditory feedback for the player.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Was Built -->
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">How It Was Built — Step by Step</h2>
+            <div class="build-steps-grid">
+                <div class="build-steps-list">
+                    <div class="build-step">
+                        <div class="build-step-num">01</div>
+                        <div class="build-step-body">
+                            <h4>Core Physics Research</h4>
+                            <p>Studied Unity's Rigidbody component and physics engine limitations. Focused on understanding how to apply manual forces to simulate a thruster-based movement system.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">02</div>
+                        <div class="build-step-body">
+                            <h4>Lander Movement Scripting</h4>
+                            <p>Programmed the C# controller for the lander, utilizing `AddRelativeForce` for propulsion and `AddRelativeTorque` for rotation. Tuned the sensitivity for a challenging but fair handling feel.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">03</div>
+                        <div class="build-step-body">
+                            <h4>Collision & Death Logic</h4>
+                            <p>Scripted the collision detection system to evaluate impact velocity. Defined safe landing parameters and catastrophic crash conditions with corresponding visual feedback.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">04</div>
+                        <div class="build-step-body">
+                            <h4>Environment Design & Obstacles</h4>
+                            <p>Designed a series of challenging level layouts with moving obstacles, narrow passages, and fuel pickups. Used a low-poly aesthetic to maintain a clean, focused visual style.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">05</div>
+                        <div class="build-step-body">
+                            <h4>Audio & VFX Integration</h4>
+                            <p>Implemented dynamic engine thrust audio that scales with input intensity. Added particle systems for thruster flames and explosion effects during crash sequences.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">06</div>
+                        <div class="build-step-body">
+                            <h4>Level Flow & Victory Conditions</h4>
+                            <p>Scripted the transition logic between levels and final victory screens. Optimized the game loop for instant restarts, encouraging a "one more try" gameplay experience.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">What I Accomplished</h2>
+            <p class="pd-text">
+                "Rocket Boost" was pivotal in cementing my understanding of Unity's physics engine. I learned the critical difference between `Update` and `FixedUpdate`, realizing that physics calculations must be synchronized with the physics timestep to prevent jitter and erratic behavior. Mastering these foundational concepts gave me the confidence to tackle much more complex controllers in subsequent projects.
+            </p>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Gameplay Video</h2>
+            <div class="pd-video-wrapper">
+                <video controls muted preload="metadata" poster="../assets/images/projects/rocket-boost/Rocket_Boost%20(1).png">
+                    <source src="../assets/videos/rocket-boost.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Screenshot Gallery</h2>
+            <div class="pd-gallery">
+                <a href="../assets/images/projects/rocket-boost/Rocket_Boost%20(1).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/rocket-boost/Rocket_Boost%20(1).png" alt="Screenshot 1" loading="lazy"></a>
+                <a href="../assets/images/projects/rocket-boost/Rocket_Boost%20(2).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/rocket-boost/Rocket_Boost%20(2).png" alt="Screenshot 2" loading="lazy"></a>
+                <a href="../assets/images/projects/rocket-boost/Rocket_Boost%20(3).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/rocket-boost/Rocket_Boost%20(3).png" alt="Screenshot 3" loading="lazy"></a>
+                <a href="../assets/images/projects/rocket-boost/Rocket_Boost%20(4).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/rocket-boost/Rocket_Boost%20(4).png" alt="Screenshot 4" loading="lazy"></a>
+            </div>
+        </section>
+
+        <div class="pd-actions animate-on-scroll slide-up">
+            <a href="../pages/projects.html" class="pd-btn pd-btn-secondary">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg>
+                Back to Projects
+            </a>
+            <a href="../assets/Projects/RocketBooster/index.html" target="_blank" class="pd-btn">
+                Play Game
+            </a>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

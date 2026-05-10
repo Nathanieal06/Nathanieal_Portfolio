@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Strike - Case Study | Nathanieal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/components.js"></script>
+</head>
+<body class="project-detail-body" data-page="project-detail" data-root="../">
+    <div id="global-skeleton-loader"></div>
+    <div id="site-nav"></div>
+
+    <header class="project-detail-hero">
+        <img src="../assets/images/projects/galaxy-strike/Galaxy_Strike_1.png" alt="Galaxy Strike Hero Background" class="project-detail-hero-bg">
+        <div class="project-detail-hero-overlay"></div>
+        <div class="project-detail-hero-content animate-on-scroll slide-up">
+            <h1>Galaxy Strike</h1>
+            <div class="project-detail-tags">
+                <span>Unity 3D</span>
+                <span>C#</span>
+                <span>Cinemachine</span>
+                <span>Unity VFX</span>
+                <span>Unity Terrain</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="project-detail-main">
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Project Overview</h2>
+            <p class="pd-text">
+                "Galaxy Strike" is an adrenaline-fueled sci-fi space combat game. Players jump into the cockpit to fight alongside Commander Nathanieal in a last-stand assault against overwhelming dark forces. The game focuses on high-speed dogfighting, requiring players to dodge terrain and enemy fire while blasting through enemy fighters to save the galaxy from total annihilation.
+            </p>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Technical Deep Dive & Game Logic</h2>
+            <p class="pd-text">Building a flight combat game required a unique approach to physics, specifically overriding gravity and handling 6-degrees-of-freedom (6DOF) movement logic.</p>
+            
+            <div class="tech-deep-dive-grid">
+                <div class="tech-card">
+                    <h3>My Contributions</h3>
+                    <ul>
+                        <li><strong>Flight Mechanics:</strong> Developed complex, physics-based flight mechanics and fluid player controls using C#, simulating momentum and thruster drag.</li>
+                        <li><strong>VFX & Environment:</strong> Utilized Unity Terrain to sculpt the planetary surface and integrated extensive laser and explosion particle systems via Unity VFX Graph.</li>
+                        <li><strong>Optimization:</strong> Implemented efficient memory management (Object Pooling) for the hundreds of laser projectiles fired simultaneously.</li>
+                    </ul>
+                </div>
+                <div class="tech-card">
+                    <h3>Game Mechanics & Physics</h3>
+                    <ul>
+                        <li><strong>AI State Patterns:</strong> Engineered AI behaviors for both enemies and allied wingmen utilizing state patterns, allowing them to track targets, evade, and form up on the player.</li>
+                        <li><strong>Collision Detection:</strong> Optimized collision detection using primitive colliders (spheres and boxes) instead of mesh colliders to drastically improve performance during intense dogfights.</li>
+                        <li><strong>Cinemachine Integration:</strong> Used Cinemachine to create a dynamic chase camera that subtly shifts its target look-ahead distance based on player speed and pitch, enhancing the sensation of flight.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Was Built -->
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">How It Was Built — Step by Step</h2>
+            <div class="build-steps-grid">
+                <div class="build-steps-list">
+                    <div class="build-step">
+                        <div class="build-step-num">01</div>
+                        <div class="build-step-body">
+                            <h4>Flight Model Prototyping</h4>
+                            <p>Developed a custom 6DOF (Six Degrees of Freedom) flight model in C#. Experimented with torque and thrust forces to create a satisfying, weighty spacecraft handling feel.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">02</div>
+                        <div class="build-step-body">
+                            <h4>Environment & Skybox Setup</h4>
+                            <p>Designed a massive space environment with rotating planets and detailed nebulas. Configured a custom skybox and ambient lighting to create a deep, immersive galactic atmosphere.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">03</div>
+                        <div class="build-step-body">
+                            <h4>Enemy AI Formation Logic</h4>
+                            <p>Programmed AI flight patterns using a combination of waypoint navigation and target tracking. Implemented formation behaviors for enemy squads to challenge the player.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">04</div>
+                        <div class="build-step-body">
+                            <h4>Weaponry & VFX Integration</h4>
+                            <p>Developed a modular weapon system with laser fire and heat-seeking missiles. Integrated Unity's VFX Graph for high-performance laser trails and cinematic ship explosions.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">05</div>
+                        <div class="build-step-body">
+                            <h4>Cinemachine Camera System</h4>
+                            <p>Set up dynamic Cinemachine cameras that adapt to the ship's movement. Added screen shake and field-of-view shifts to emphasize speed and impact during combat.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">06</div>
+                        <div class="build-step-body">
+                            <h4>Game Flow & UI Polish</h4>
+                            <p>Finalized mission objectives, dialogue systems for Commander Nathanieal, and a futuristic cockpit HUD. Polished the overall experience with deep-space audio and UI transitions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">What I Accomplished</h2>
+            <p class="pd-text">
+                "Galaxy Strike" was a deep dive into non-standard player controllers. Moving away from standard bipedal characters to spacecraft required a solid understanding of Quaternions and local vs. global space transformations in Unity. I also successfully managed performance bottlenecks caused by heavy particle systems, learning how to batch particles and use GPU instancing.
+            </p>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Gameplay Video</h2>
+            <div class="pd-video-wrapper">
+                <video controls muted preload="metadata" poster="../assets/images/projects/galaxy-strike/Galaxy_Strike_1.png">
+                    <source src="../assets/videos/galaxy-strike.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Screenshot Gallery</h2>
+            <div class="pd-gallery">
+                <a href="../assets/images/projects/galaxy-strike/Galaxy_Strike_1.png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/galaxy-strike/Galaxy_Strike_1.png" alt="Screenshot 1" loading="lazy"></a>
+                <a href="../assets/images/projects/galaxy-strike/Galaxy_Strike_2.png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/galaxy-strike/Galaxy_Strike_2.png" alt="Screenshot 2" loading="lazy"></a>
+                <a href="../assets/images/projects/galaxy-strike/Galaxy_Strike_3.png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/galaxy-strike/Galaxy_Strike_3.png" alt="Screenshot 3" loading="lazy"></a>
+                <a href="../assets/images/projects/galaxy-strike/Galaxy_Strike_4.png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/galaxy-strike/Galaxy_Strike_4.png" alt="Screenshot 4" loading="lazy"></a>
+            </div>
+        </section>
+
+        <div class="pd-actions animate-on-scroll slide-up">
+            <a href="../pages/projects.html" class="pd-btn pd-btn-secondary">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg>
+                Back to Projects
+            </a>
+            <a href="../assets/Projects/GalaxyStrikeBuild/index.html" target="_blank" class="pd-btn">
+                Play Game
+            </a>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

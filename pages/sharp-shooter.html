@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharp Shooter - Case Study | Nathanieal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/components.js"></script>
+</head>
+<body class="project-detail-body" data-page="project-detail" data-root="../">
+    <div id="global-skeleton-loader"></div>
+    <div id="site-nav"></div>
+
+    <header class="project-detail-hero">
+        <img src="../assets/images/projects/sharp-shooter/Sharp_Shooter_1.png" alt="Sharp Shooter Hero Background" class="project-detail-hero-bg">
+        <div class="project-detail-hero-overlay"></div>
+        <div class="project-detail-hero-content animate-on-scroll slide-up">
+            <h1>Sharp Shooter</h1>
+            <div class="project-detail-tags">
+                <span>Unity 3D</span>
+                <span>C#</span>
+                <span>ProBuilder</span>
+                <span>Unity VFX</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="project-detail-main">
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Project Overview</h2>
+            <p class="pd-text">
+                "Sharp Shooter" is a fast-paced sci-fi FPS arena game built in Unity. Thrown into a hostile environment, players must survive against relentless waves of enemies emerging from dynamic spawn portals. It's a test of reflexes and spatial awareness, requiring you to dodge incoming projectiles and destroy every threat before they overwhelm you.
+            </p>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Technical Deep Dive & Game Logic</h2>
+            <p class="pd-text">This project allowed me to dive deep into FPS mechanics, focusing heavily on tight controls, reliable hit detection, and dynamic spawning algorithms.</p>
+            
+            <div class="tech-deep-dive-grid">
+                <div class="tech-card">
+                    <h3>My Contributions</h3>
+                    <ul>
+                        <li><strong>FPS Mechanics:</strong> Programmed robust first-person shooter mechanics from scratch, including a custom C# player controller to handle smooth movement and jumping.</li>
+                        <li><strong>Level Prototyping:</strong> Utilized Unity's ProBuilder tool to rapidly gray-box and design the arena layout, ensuring the environment supported fluid combat flow.</li>
+                        <li><strong>VFX Integration:</strong> Integrated and optimized Unity VFX and particle systems via code to handle muzzle flashes, projectile trails, and portal spawning effects.</li>
+                    </ul>
+                </div>
+                <div class="tech-card">
+                    <h3>Game Mechanics & Physics</h3>
+                    <ul>
+                        <li><strong>Weapon Raycasting:</strong> Implemented precise physics-based raycasting for hitscan weapons, ensuring immediate and accurate hit registration on fast-moving targets.</li>
+                        <li><strong>Enemy AI & Pathfinding:</strong> Developed NavMesh-based AI pathfinding for enemies, allowing them to navigate the arena geometry and track the player dynamically.</li>
+                        <li><strong>Dynamic Spawning Algorithm:</strong> Engineered a wave-based spawning algorithm that randomly activates portals and throttles enemy instancing based on the current active count to maintain performance.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Was Built -->
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">How It Was Built — Step by Step</h2>
+            <div class="build-steps-grid">
+                <div class="build-steps-list">
+                    <div class="build-step">
+                        <div class="build-step-num">01</div>
+                        <div class="build-step-body">
+                            <h4>Arena Prototype & Grayboxing</h4>
+                            <p>Used ProBuilder to rapidly prototype the arena layout. Focused on creating sightlines, verticality, and cover points to ensure balanced and fluid combat.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">02</div>
+                        <div class="build-step-body">
+                            <h4>FPS Controller Development</h4>
+                            <p>Programmed a custom C# player controller for tight, responsive movement. Implemented jumping, sprinting, and physics-based interactions with the environment.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">03</div>
+                        <div class="build-step-body">
+                            <h4>Weapon System & Hit Detection</h4>
+                            <p>Developed a raycast-based weapon system for instantaneous hit detection. Scripted recoil patterns, reload logic, and muzzle flash effects using particle systems.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">04</div>
+                        <div class="build-step-body">
+                            <h4>Enemy AI & Spawning</h4>
+                            <p>Created NavMesh-driven AI that tracks and attacks the player. Designed a wave-based spawning system that progressively increases difficulty over time.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">05</div>
+                        <div class="build-step-body">
+                            <h4>Visual Effects & VFX Graph</h4>
+                            <p>Utilized Unity's VFX Graph and Particle System to create portals, projectile trails, and explosions. Optimized these effects for high performance without sacrificing visual impact.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">06</div>
+                        <div class="build-step-body">
+                            <h4>UI & Game Loop Polish</h4>
+                            <p>Designed a clean sci-fi HUD with health and ammo indicators. Finalized the game loop with start/end menus and score tracking for competitive replayability.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">What I Accomplished</h2>
+            <p class="pd-text">
+                Creating "Sharp Shooter" drastically improved my understanding of 3D vector math and physics raycasting within Unity. I learned how to manage object lifecycles using pooling to prevent stuttering when dozens of projectiles and enemies are instantiated. Balancing the enemy spawn rates against the player's damage output taught me valuable lessons in game design and difficulty tuning.
+            </p>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Gameplay Video</h2>
+            <div class="pd-video-wrapper">
+                <video controls muted preload="metadata" poster="../assets/images/projects/sharp-shooter/Sharp_Shooter_1.png">
+                    <source src="../assets/videos/sharp-shooter.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Screenshot Gallery</h2>
+            <div class="pd-gallery">
+                <a href="../assets/images/projects/sharp-shooter/Sharp_Shooter_1.png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/sharp-shooter/Sharp_Shooter_1.png" alt="Screenshot 1" loading="lazy"></a>
+                <a href="../assets/images/projects/sharp-shooter/Sharp_Shooter_2.png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/sharp-shooter/Sharp_Shooter_2.png" alt="Screenshot 2" loading="lazy"></a>
+                <a href="../assets/images/projects/sharp-shooter/Sharp_Shooter_3.png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/sharp-shooter/Sharp_Shooter_3.png" alt="Screenshot 3" loading="lazy"></a>
+                <a href="../assets/images/projects/sharp-shooter/Sharp_Shooter_4.png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/sharp-shooter/Sharp_Shooter_4.png" alt="Screenshot 4" loading="lazy"></a>
+            </div>
+        </section>
+
+        <div class="pd-actions animate-on-scroll slide-up">
+            <a href="../pages/projects.html" class="pd-btn pd-btn-secondary">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg>
+                Back to Projects
+            </a>
+            <a href="../assets/Projects/SharpShooterBuild/index.html" target="_blank" class="pd-btn">
+                Play Game
+            </a>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

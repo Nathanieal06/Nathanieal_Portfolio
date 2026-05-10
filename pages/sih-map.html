@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIH Village Map - Case Study | Nathanieal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/components.js"></script>
+</head>
+<body class="project-detail-body" data-page="project-detail" data-root="../">
+    <div id="global-skeleton-loader"></div>
+    <div id="site-nav"></div>
+
+    <header class="project-detail-hero">
+        <img src="../assets/images/projects/SIH/SIH%20Map%20(1).png" alt="SIH Map Hero Background" class="project-detail-hero-bg">
+        <div class="project-detail-hero-overlay"></div>
+        <div class="project-detail-hero-content animate-on-scroll slide-up">
+            <h1>SIH Village Map</h1>
+            <div class="project-detail-tags">
+                <span>Unity 3D</span>
+                <span>Level Design</span>
+                <span>Environmental Art</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="project-detail-main">
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Project Overview</h2>
+            <p class="pd-text">
+                Originally conceptualized and designed for a Smart India Hackathon project, this is a beautifully lit, immersive rural village map. The goal was to create a highly realistic, culturally authentic environment using strictly optimized free assets. The map serves as a showcase of my level design capabilities, focusing on mood, lighting, and spatial flow rather than complex code logic.
+            </p>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Technical Deep Dive & Level Design</h2>
+            <p class="pd-text">Creating a believable world requires an eye for detail and an understanding of Unity's rendering pipelines to ensure it runs smoothly on target hardware.</p>
+            
+            <div class="tech-deep-dive-grid">
+                <div class="tech-card">
+                    <h3>My Contributions</h3>
+                    <ul>
+                        <li><strong>Environmental Art:</strong> Focused strictly on Environmental Design and post-processing to create a warm, inviting rural aesthetic.</li>
+                        <li><strong>Terrain & Placement:</strong> Hand-placed terrain details, foliage, and structured the village grid to feel organic and lived-in.</li>
+                        <li><strong>Asset Curation:</strong> Sourced, optimized, and integrated a collection of free assets, ensuring their materials and textures were consistent.</li>
+                    </ul>
+                </div>
+                <div class="tech-card">
+                    <h3>Lighting & Optimization</h3>
+                    <ul>
+                        <li><strong>Post-Processing:</strong> Utilized Unity's Post-Processing Stack to enhance color grading, ambient occlusion, and bloom, giving the map a cinematic look.</li>
+                        <li><strong>Baked Lighting:</strong> Configured baked Global Illumination (GI) to simulate realistic sunlight bouncing off dirt paths and rustic walls while maintaining high performance.</li>
+                        <li><strong>Occlusion Culling:</strong> Set up occlusion culling to ensure that objects outside the camera's view are not rendered, allowing the map to run efficiently even on lower-end machines.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Was Built -->
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">How It Was Built — Step by Step</h2>
+            <div class="build-steps-grid">
+                <div class="build-steps-list">
+                    <div class="build-step">
+                        <div class="build-step-num">01</div>
+                        <div class="build-step-body">
+                            <h4>Asset Collection & Optimization</h4>
+                            <p>Sourced a variety of high-quality free assets suitable for a rural village theme. Optimized textures and mesh density to ensure they would perform well in a large-scale Unity scene.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">02</div>
+                        <div class="build-step-body">
+                            <h4>Terrain Sculpting & Texturing</h4>
+                            <p>Used Unity's terrain tools to sculpt the village landscape, adding elevation, paths, and water features. Painted multi-layered textures to create realistic soil, grass, and rock surfaces.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">03</div>
+                        <div class="build-step-body">
+                            <h4>Village Layout & Propping</h4>
+                            <p>Manually placed houses, fences, trees, and props to create an organic, lived-in feel. Focused on spatial flow and visual storytelling to make every corner of the village feel unique.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">04</div>
+                        <div class="build-step-body">
+                            <h4>Lighting Setup & Baking</h4>
+                            <p>Configured a directional light for sunlight and used Unity's Lightmapper to bake global illumination. This pre-calculated light bounce significantly improved visual quality while maintaining performance.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">05</div>
+                        <div class="build-step-body">
+                            <h4>Post-Processing Effects</h4>
+                            <p>Added a Post-Processing volume with color grading, bloom, and ambient occlusion. These effects unified the visual style and gave the map a cinematic, high-end look.</p>
+                        </div>
+                    </div>
+                    <div class="build-step">
+                        <div class="build-step-num">06</div>
+                        <div class="build-step-body">
+                            <h4>Final Performance Pass</h4>
+                            <p>Implemented occlusion culling and LOD (Level of Detail) groups for distant objects. Ran final performance tests to ensure stable frame rates across different hardware configurations.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">What I Accomplished</h2>
+            <p class="pd-text">
+                This project was a deep dive into the art side of game development. I learned how crucial lighting and post-processing are to the overall "feel" of a game. By baking lightmaps and optimizing polygon counts on imported assets, I successfully balanced visual fidelity with performance, a critical skill for any level designer working in Unity.
+            </p>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Map Overview Video</h2>
+            <div class="pd-video-wrapper">
+                <video controls muted preload="metadata" poster="../assets/images/projects/SIH/SIH%20Map%20(1).png">
+                    <source src="../assets/videos/SIH%20Village%20video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="pd-section animate-on-scroll slide-up">
+            <h2 class="pd-section-title">Screenshot Gallery</h2>
+            <div class="pd-gallery">
+                <a href="../assets/images/projects/SIH/SIH%20Map%20(1).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/SIH/SIH%20Map%20(1).png" alt="Screenshot 1" loading="lazy"></a>
+                <a href="../assets/images/projects/SIH/SIH%20Map%20(2).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/SIH/SIH%20Map%20(2).png" alt="Screenshot 2" loading="lazy"></a>
+                <a href="../assets/images/projects/SIH/SIH%20Map%20(3).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/SIH/SIH%20Map%20(3).png" alt="Screenshot 3" loading="lazy"></a>
+                <a href="../assets/images/projects/SIH/SIH%20Map%20(4).png" target="_blank" rel="noopener noreferrer" style="display: block;"><img src="../assets/images/projects/SIH/SIH%20Map%20(4).png" alt="Screenshot 4" loading="lazy"></a>
+            </div>
+        </section>
+
+        <div class="pd-actions animate-on-scroll slide-up">
+            <a href="../pages/projects.html" class="pd-btn pd-btn-secondary">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg>
+                Back to Projects
+            </a>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
