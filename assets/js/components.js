@@ -96,7 +96,31 @@ document.addEventListener('DOMContentLoaded', function () {
     const footerHTML = `
 <footer class="portfolio-footer">
     <div class="footer-content">
-        <span>&copy; 2026 Nathanieal</span>
+        <div class="pf-cols">
+            <div class="pf-col">
+                <h4>LATEST PROJECTS</h4>
+                <ul>
+                    <li><a href="${root}pages/unity-rpg.html">UNITY RPG</a></li>
+                    <li><a href="${root}pages/zatun-zombie.html">ZATUN ZOMBIE GAME</a></li>
+                    <li><a href="${root}pages/secret-book.html">THE SECRET BOOK</a></li>
+                    <li><a href="${root}pages/sih-map.html">SIH VILLAGE MAP</a></li>
+                    <li><a href="${root}pages/sharp-shooter.html">SHARP SHOOTER</a></li>
+                </ul>
+            </div>
+            <div class="pf-col">
+                <h4>PORTFOLIO</h4>
+                <ul>
+                    <li><a href="${root}index.html">HOME</a></li>
+                    <li><a href="${root}pages/certificates.html">CERTIFICATES</a></li>
+                    <li><a href="${root}pages/achievements.html">ACHIEVEMENTS</a></li>
+                    <li><a href="${root}pages/projects.html">ALL PROJECTS</a></li>
+                    <li><a href="https://github.com/Nathanieal06" target="_blank">GITHUB</a></li>
+                    <li><a href="${root}assets/Resume/Nathanieal_Sandipurti_Resume_Updated.pdf" target="_blank">RESUME</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="pf-divider"></div>
+        <span>&copy; 2026 Nathanieal &nbsp;&mdash;&nbsp; Game Developer &amp; Programmer</span>
     </div>
 </footer>`;
 

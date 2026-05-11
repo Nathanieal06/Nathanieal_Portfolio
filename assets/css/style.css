@@ -1279,19 +1279,77 @@ body.custom-cursor-active #custom-crosshair {
 .portfolio-footer {
   background: var(--bg-dark);
   border-top: 1px solid rgba(232, 129, 106, 0.5);
-  padding: 20px 40px;
+  padding: 40px 40px 24px;
   font-family: 'Jost', sans-serif;
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
   color: var(--text-peach);
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Two-column project/portfolio grid inside sub-page footer */
+.pf-cols {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.pf-col {
+  min-width: 180px;
+}
+
+.pf-col h4 {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--coral-accent);
+  margin: 0 0 14px;
+  font-weight: 600;
+}
+
+.pf-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pf-col ul li a {
+  color: rgba(254, 220, 200, 0.65);
+  text-decoration: none;
+  font-size: 10px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+  display: inline-block;
+  border-left: 2px solid transparent;
+  padding-left: 0;
+}
+
+.pf-col ul li a:hover {
+  color: var(--coral-accent);
+  border-left-color: var(--coral-accent);
+  padding-left: 6px;
+}
+
+.pf-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(232, 129, 106, 0.2);
+  margin-bottom: 20px;
 }
 
 .footer-socials a {
@@ -1303,6 +1361,21 @@ body.custom-cursor-active #custom-crosshair {
 
 .footer-socials a:hover {
   color: var(--coral-accent);
+}
+
+@media (max-width: 480px) {
+  .pf-cols {
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pf-col {
+    text-align: center;
+  }
+  .pf-col ul li a:hover {
+    padding-left: 0;
+    border-left-color: transparent;
+  }
 }
 
 /* 9. Default container for particles */
