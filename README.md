@@ -11,14 +11,19 @@ Personal portfolio website for **Nathanieal Sandipurti**, showcasing game develo
 ## 📁 Project Structure
 ```
 Nathanieal_Portfolio/
-├── index.html          ← Homepage
-├── pages/              ← All sub-pages
+├── index.html
+├── pages/
+│   ├── projects.html
+│   ├── about.html
+│   ├── contact.html
+│   └── ...
 ├── assets/
-│   ├── css/            ← Stylesheets
-│   ├── js/             ← Scripts
-│   ├── images/         ← Optimized image assets
-│   └── videos/         ← Project gameplay videos
-└── resume/             ← PDF résumé
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   └── videos/
+├── resume/
+└── .gitignore
 ```
 
 ## 🎮 Featured Projects
