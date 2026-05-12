@@ -3,11 +3,12 @@
 Personal portfolio website for **Nathanieal Sandipurti**, showcasing game development projects, academic results, achievements, and certificates.
 
 ## 🚀 Tech Stack
-- HTML5 · CSS3 (Vanilla) · JavaScript (Vanilla)
-- CSS parallax, IntersectionObserver, RequestAnimationFrame
+- **HTML5** · **CSS3** (Vanilla) · **JavaScript** (Vanilla)
+- CSS parallax effects, IntersectionObserver API, RequestAnimationFrame
 - No frameworks / no build step — open `index.html` directly in a browser
+- 100% client-side rendering
 
-## 📁 Structure
+## 📁 Project Structure
 ```
 Nathanieal_Portfolio/
 ├── index.html          ← Homepage
@@ -15,12 +16,31 @@ Nathanieal_Portfolio/
 ├── assets/
 │   ├── css/            ← Stylesheets
 │   ├── js/             ← Scripts
-│   ├── images/         ← Organised image assets
+│   ├── images/         ← Optimized image assets
 │   └── videos/         ← Project gameplay videos
 └── resume/             ← PDF résumé
 ```
 
+## 🎮 Featured Projects
+Showcasing:
+- Game development work
+- Academic achievements
+- Professional certifications
+- Technical portfolios
 
-## 📄 Live Demo
-Open `https://nathanieal-portfolio.vercel.app/` in any modern browser.
+## 🌐 Live Demo
+Visit the portfolio: **[https://nathanieal-portfolio.vercel.app/](https://nathanieal-portfolio.vercel.app/)**
 
+Open in any modern browser (Chrome, Firefox, Safari, Edge).
+
+## 📦 Getting Started
+1. Clone the repository
+2. Open `index.html` in your browser
+3. No installation or build tools required
+
+## 📝 License
+Personal portfolio project
+
+---
+
+Made with ❤️ by Nathanieal Sandipurti
