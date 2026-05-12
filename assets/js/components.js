@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'college-results': 'GTU Results',
         'school-results': 'School Results',
         'feedback': 'Contact',
-        'extra-curricular': 'Extra Curricular'
+        'more-about-me': 'More About Me'
     };
 
     // Returns class="nav-active" when the current page matches
@@ -92,35 +92,87 @@ document.addEventListener('DOMContentLoaded', function () {
     </div>
 </nav>`;
 
-    // ── Build Simple Footer HTML ──────────────────────────────────────────────
+    // ── Build Modern Footer HTML ──────────────────────────────────────────────
     const footerHTML = `
-<footer class="portfolio-footer">
-    <div class="footer-content">
-        <div class="pf-cols">
-            <div class="pf-col">
-                <h4>LATEST PROJECTS</h4>
-                <ul>
-                    <li><a href="${root}pages/unity-rpg.html">UNITY RPG</a></li>
-                    <li><a href="${root}pages/zatun-zombie.html">ZATUN ZOMBIE GAME</a></li>
-                    <li><a href="${root}pages/secret-book.html">THE SECRET BOOK</a></li>
-                    <li><a href="${root}pages/sih-map.html">SIH VILLAGE MAP</a></li>
-                    <li><a href="${root}pages/sharp-shooter.html">SHARP SHOOTER</a></li>
-                </ul>
-            </div>
-            <div class="pf-col">
-                <h4>PORTFOLIO</h4>
-                <ul>
-                    <li><a href="${root}index.html">HOME</a></li>
-                    <li><a href="${root}pages/certificates.html">CERTIFICATES</a></li>
-                    <li><a href="${root}pages/achievements.html">ACHIEVEMENTS</a></li>
-                    <li><a href="${root}pages/projects.html">ALL PROJECTS</a></li>
-                    <li><a href="https://github.com/Nathanieal06" target="_blank">GITHUB</a></li>
-                    <li><a href="${root}assets/Resume/Nathanieal_Sandipurti_Resume_Updated.pdf" target="_blank">RESUME</a></li>
-                </ul>
-            </div>
+<footer class="modern-footer" id="contact-section">
+    <div class="footer-contact-row">
+        <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="fc-icon">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Songadh, Gujarat</span>
         </div>
-        <div class="pf-divider"></div>
-        <span>&copy; 2026 Nathanieal &nbsp;&mdash;&nbsp; Game Developer &amp; Programmer</span>
+        <div class="footer-contact-item">
+            <a href="mailto:nathasandipurti@gmail.com" class="fc-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="fc-icon">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>nathasandipurti@gmail.com</span>
+            </a>
+        </div>
+        <div class="footer-contact-item">
+            <a href="${root}assets/Resume/Nathanieal_Sandipurti_Resume_Updated.pdf" target="_blank" class="fc-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="fc-icon">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <span>Resume</span>
+            </a>
+        </div>
+    </div>
+    <div class="modern-footer-divider" style="margin-top: 0; margin-bottom: 50px;"></div>
+    <div class="modern-footer-top">
+        <div class="footer-col about-col">
+            <h4>ABOUT ME</h4>
+            <p>Game Programmer crafted in the crucible of code and logic, specialized in Unity Engine and C#.</p>
+            <p>Currently pursuing B.E. in Computer Engineering, building interactive worlds — from 3D story-driven adventures to action-packed web games.</p>
+            <p>I am looking for an opportunity where I can combine my skills as a programmer and my knowledge as a designer in a passionate team project.</p>
+        </div>
+        <div class="footer-col">
+            <h4>LATEST PROJECTS</h4>
+            <ul>
+                <li><a href="${root}pages/unity-rpg.html">UNITY RPG</a></li>
+                <li><a href="${root}pages/zatun-zombie.html">ZATUN ZOMBIE GAME</a></li>
+                <li><a href="${root}pages/secret-book.html">THE SECRET BOOK</a></li>
+                <li><a href="${root}pages/sih-map.html">SIH VILLAGE MAP</a></li>
+                <li><a href="${root}pages/sharp-shooter.html">SHARP SHOOTER</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>PORTFOLIO</h4>
+            <ul>
+                <li><a href="${homeHref}">HOME</a></li>
+                <li><a href="${root}pages/certificates.html">CERTIFICATES</a></li>
+                <li><a href="${root}pages/projects.html">PROJECTS</a></li>
+                <li><a href="https://github.com/Nathanieal06" target="_blank">GITHUB</a></li>
+                <li><a href="${root}assets/Resume/Nathanieal_Sandipurti_Resume_Updated.pdf" target="_blank">RESUME</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>NATHANIEAL</h4>
+            <ul>
+                <li><a href="${homeHref}">HOME</a></li>
+                <li><a href="${root}pages/projects.html">PORTFOLIO</a></li>
+                <li><a href="${root}pages/achievements.html">ACHIEVEMENTS</a></li>
+                <li><a href="${root}pages/certificates.html">CERTIFICATES</a></li>
+                <li><a href="${root}pages/feedback.html">FEEDBACK</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="modern-footer-divider"></div>
+    <div class="modern-footer-bottom">
+        <ul class="footer-bottom-links">
+            <li><a href="${homeHref}">HOME</a></li>
+            <li><a href="${root}pages/projects.html">PORTFOLIO</a></li>
+            <li><a href="${root}pages/achievements.html">ACHIEVEMENTS</a></li>
+            <li><a href="${root}pages/certificates.html">CERTIFICATES</a></li>
+            <li><a href="${root}pages/feedback.html">BIOGRAPHY & CONTACT</a></li>
+        </ul>
     </div>
 </footer>`;
 
