@@ -43,9 +43,4 @@ Open in any modern browser (Chrome, Firefox, Safari, Edge).
 2. Open `index.html` in your browser
 3. No installation or build tools required
 
-## 📝 License
-Personal portfolio project
-
----
-
 Made with ❤️ by Nathanieal Sandipurti
