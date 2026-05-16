@@ -1,3 +1,17 @@
+// 0. Preloader Logic
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('site-preloader');
+    if (preloader) {
+        // Slight delay to ensure smooth transition and let the user see the loader animation
+        setTimeout(() => {
+            preloader.classList.add('fade-out');
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 600); // Matches the CSS transition duration
+        }, 800);
+    }
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     
     // 1. Sticky Frosted-Glass Nav Bar Hide/Show & Hero Fade
